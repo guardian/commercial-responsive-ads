@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Responsive Ad</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="HandheldFriendly" content="True" />
+        <style type="text/css">
+        
+            /* Temp, needed for local testing only */
+            .gs-container {
+                max-width: 1300px;
+                margin: 0 auto;
+            } 
+        
+            .adTest-adBWrapper .container__body {
+                height: 250px;
+                position: relative;
+            }
+    
+            /* These are over-riding site styles USE WITH CAUTION */
+            .top-banner-ad-container--desktop,
+            .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+                display: block !important;
+                max-width: none !important;
+            }
+
+            .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+                width: 100% !important;
+                padding: 0 !important;
+                margin-left: 0 !important;
+            }
+
+            /* End of nasty hacks */
+    
+            .adTest-adWrapper {
+                height: 250px;
+                box-sizing: border-box;
+                background-repeat: no-repeat;
+                background-position: top left;
+                position: relative;
+            }
+
+            @media (max-width : 319px) {
+                .adTest-adWrapper {
+                    background-image: url(images/UnileverLiveBetterChallenge4_mpu.gif);
+                }
+            }
+            
+            @media (min-width : 320px) {
+                .adTest-adBWrapper {
+                    background: red url(images/panelBG.jpg) repeat-x 12% 0;
+                }
+                .adTest-adWrapper {
+                    background: url(images/girl.png) no-repeat 33% 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="adTest-adBWrapper">
+            <a href="htp://www.theguardian.com">
+                <div class="gs-container">
+                    <div class="adTest-adWrapper">
+                        <div class="facia-container--layout-front">
+                            <div class="facia-container__inner">
+                                <div class="container__body">
+                                    <div class="adTest-cta"></div>
+                                    <div class="adTest-subject"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </body>
+</html>
