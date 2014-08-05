@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Responsive Ad Test</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="HandheldFriendly" content="True" />
+        <style type="text/css">
+            .pageWrapper {
+                background: red;
+            }
+            .adFlexWrapper {
+                overflow: hidden;
+            }
+            @media only screen 
+            and (min-width : 321px) {
+                .pageWrapper {
+                    background: blue;
+                }
+            }
+            @media only screen 
+            and (min-width : 740px) {
+                .pageWrapper {
+                    background: green;
+                }
+            }  
+            @media only screen 
+            and (min-width : 980px) {
+                .pageWrapper {
+                    background: yellow;
+                }
+            }      
+            @media only screen 
+            and (min-width : 1300px) {
+                .pageWrapper {
+                    background: purple;
+                }
+            }        
+        </style>
+    </head>
+    <body>
+        <div class="pageWrapper">
+            <div class="adFlexWrapper">
+                Ad in here
+                <iframe width="100%" height="250" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" src="ad.html"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
