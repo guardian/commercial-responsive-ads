@@ -38,16 +38,20 @@
             .adTest-adWrapper {
                 height: 250px;
                 box-sizing: border-box;
-                background-image: url(images/300x250.jpg);
                 background-repeat: no-repeat;
                 background-position: top left;
                 position: relative;
             }
 
+            @media (max-width : 319px) {
+                .adTest-adWrapper {
+                    background-image: url(images/300x250.jpg);
+                }
+            }
  
             @media (min-width : 320px) {
                 .adTest-adBWrapper {
-                    background: url(images/bgTexture.png), url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzRjNGM0YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+                    background: url(images/bgTexture.png),  url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzRjNGM0YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
                     background: url(images/bgTexture.png), -moz-linear-gradient(left,  rgba(38,38,38,1) 1%, rgba(0,0,0,0) 100%);
                     background: url(images/bgTexture.png), -webkit-gradient(linear, left top, right top, color-stop(1%,rgba(38,38,38,1)), color-stop(100%,rgba(0,0,0,0)));
                     background: url(images/bgTexture.png), -webkit-linear-gradient(left,  rgba(38,38,38,1) 1%,rgba(0,0,0,0) 100%);
@@ -57,7 +61,6 @@
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#00000000',GradientType=1 );
                 }
                 .adTest-adWrapper {
-                    background-image: url(images/mMedium.png);
                     background-position: -56px 0;
                 }
                 .adTest-subject {
@@ -84,6 +87,13 @@
                     height: 40px;
                 }
             }
+            
+            @media (min-width : 320px) and (max-width : 739px) {
+                .adTest-adWrapper {
+                    background-image: url(images/mMedium.png);
+                }    
+            }
+            
             @media (min-width : 740px) {
                 .adTest-adWrapper {
                     background-image: url(images/mWide.png);
