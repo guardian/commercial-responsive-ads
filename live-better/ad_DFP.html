@@ -1,0 +1,86 @@
+<div class="breakout__html">
+    <style type="text/css">
+        .adTest-adBWrapper .container__body {
+            height: 250px;
+            position: relative;
+        }
+        /* These are over-riding site styles USE WITH CAUTION */
+        .top-banner-ad-container--desktop,
+        .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+            display: block !important;
+            max-width: none !important;
+        }
+        .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+            width: 100% !important;
+            padding: 0 !important;
+            margin-left: 0 !important;
+        }
+        .top-banner-ad-container--desktop .container__body {
+            margin-left: 0;
+        }
+        /* End of nasty hacks */
+
+        .adTest-adWrapper {
+            height: 250px;
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            background-position: top left;
+            position: relative;
+            background: url(%%FILE:PNG1%%) no-repeat 66% 0;
+        }
+        .adTest-adBWrapper {
+            background: url(%%FILE:JPG1%%) repeat-x 12% 0;
+        }
+        .adTest-subject {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            background: url(%%FILE:PNG2%%) no-repeat bottom left;
+            background-size: contain;
+            width: 60%;
+            height: 68px;
+            max-width: 300px;
+        }
+        .adTest-cta {
+            background: url(%%FILE:PNG5%%) no-repeat 0 50%;
+            background-size: contain;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 45%;
+            height: 100px;
+        }
+    
+        @media (max-width: 739px){
+            .adTest-adWrapper .facia-container__inner {
+                background: url(%%FILE:PNG4%%) no-repeat 95% 2px;
+            }
+        }
+
+        @media (min-width: 740px) {
+            .adTest-adWrapper .facia-container__inner {
+                background: url(%%FILE:PNG3%%) no-repeat 100% 2px;
+            }
+            .adTest-cta {
+                top: 20px;
+                height: 130px;
+            }
+        }
+    </style>
+    <div class="adTest-adBWrapper">
+        <a href="%%CLICK_URL_UNESC%%htp://www.theguardian.com">
+            <div class="gs-container">
+                <div class="adTest-adWrapper">
+                    <div class="facia-container--layout-front">
+                        <div class="facia-container__inner">
+                            <div class="container__body">
+                                <div class="adTest-cta"></div>
+                                <div class="adTest-subject"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
