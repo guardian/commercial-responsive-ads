@@ -14,10 +14,6 @@
                 max-width: 1300px;
                 margin: 0 auto;
             } 
-            .adTest-adBWrapper .container__body {
-                height: 250px;
-                position: relative;
-            }
             /* These are over-riding site styles USE WITH CAUTION */
             .top-banner-ad-container--desktop,
             .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
@@ -30,9 +26,17 @@
                 margin-left: 0 !important;
             }
             /* End of nasty hacks */
-    
+            .adTest-adBWrapper .container__body {
+                height: 100px;
+                position: relative;
+            }  
+            .adTest-adWrapper .facia-container__inner {
+                background-image: url(images/unileverS.png);
+                background-repeat: no-repeat;
+                background-position: 95% 2px;
+            }
             .adTest-adWrapper {
-                height: 250px;
+                height: 100px;
                 box-sizing: border-box;
                 background-repeat: no-repeat;
                 background-position: top left;
@@ -44,11 +48,11 @@
             }
             .adTest-subject {
                 position: absolute;
-                bottom: 10px;
-                left: 10%;
+                bottom: 5px;
+                left: 5%;
                 background: url(images/Live-Better-logos_4_heart.png) no-repeat bottom left;
                 background-size: contain;
-                width: 60%;
+                width: 50%;
                 height: 68px;
                 max-width: 300px;
             }
@@ -56,21 +60,41 @@
                 background: url(images/wiseWay.png) no-repeat 0 50%;
                 background-size: contain;
                 position: absolute;
-                top: 50px;
-                left: 10%;
+                top: 0;
+                left: 5%;
                 width: 45%;
-                height: 100px;
+                height: 60px;
             }
             
-            @media (max-width: 739px){
+            @media (max-width: 320px){
                 .adTest-adWrapper .facia-container__inner {
-                    background: url(images/unileverS.png) no-repeat 95% 2px;
+                    background-size: 30%;
+                }
+            }
+            
+            @media (min-width: 321px){
+                .adTest-adWrapper,
+                .adTest-adBWrapper .container__body {
+                    height: 250px;
+                }
+                .adTest-subject {
+                    bottom: 20px;
+                    left: 10%;
+                    width: 60%;
+                }
+                .adTest-cta {
+                    top: 50px;
+                    left: 10%;
+                    width: 45%;
+                    height: 100px;
                 }
             }
 
             @media (min-width: 740px) {
                 .adTest-adWrapper .facia-container__inner {
-                    background: url(images/unilever200.png) no-repeat 95% 2px;
+                    background-image: url(images/unilever200.png);
+                    background-repeat: no-repeat;
+                    background-position: 95% 2px;
                 }
                 .adTest-cta {
                     left: 15%;
