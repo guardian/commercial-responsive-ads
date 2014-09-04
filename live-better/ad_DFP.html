@@ -18,6 +18,7 @@
         .adTest-adBWrapper .container__body {
             height: 100px;
             position: relative;
+            padding-top: 0;
         }
         .adTest-adWrapper .facia-container__inner {
             background-image: url(%%FILE:PNG4%%);
@@ -42,7 +43,7 @@
             background: url(%%FILE:PNG2%%) no-repeat bottom left;
             background-size: contain;
             width: 50%;
-            height: 68px;
+            height: 50px;
             max-width: 300px;
         }
         .adTest-cta {
@@ -54,44 +55,40 @@
             width: 45%;
             height: 60px;
         }
-        
-        @media (max-width: 320px){
+
+        @media (min-width: 481px){
+            .adTest-subject {
+                left: 25%;
+            }
+        }
+
+        @media (max-width: 740px){
             .adTest-adWrapper .facia-container__inner {
-                background-size: 30%;
+                background-size: contain;
             }
         }
         
-        @media (min-width: 321px){
+        @media (min-width: 741px){
+            .adTest-subject {
+                bottom: 25px;
+                left: 10%;
+                width: 60%;
+                height: 68px;
+            }
             .adTest-adWrapper,
             .adTest-adBWrapper .container__body {
                 height: 250px;
             }
-            .adTest-subject {
-                bottom: 20px;
-                left: 10%;
-                width: 60%;
-            }
-            .adTest-cta {
-                top: 50px;
-                left: 10%;
-                width: 45%;
-                height: 100px;
-            }
-        }
-    
-        @media (min-width: 740px) {
             .adTest-adWrapper .facia-container__inner {
                 background-image: url(%%FILE:PNG3%%);
                 background-repeat: no-repeat;
                 background-position: 95% 2px;
             }
             .adTest-cta {
-                left: 15%;
+                left: 10%;
                 top: 20px;
                 height: 130px;
-            }
-            .adTest-subject {
-                left: 15%;
+                width: 45%;
             }
         }
     </style>
