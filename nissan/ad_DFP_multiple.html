@@ -1,16 +1,5 @@
 <div class="breakout__html">
     <style type="text/css">
-        body {
-            background-color: grey;
-            padding: 0;
-            margin: 0;
-        }
-    
-        /* Temp, needed for local testing only */
-        .gs-container {
-            max-width: 1300px;
-            margin: 0 auto;
-        } 
         /* These are over-riding site styles USE WITH CAUTION */
         .top-banner-ad-container--desktop,
         .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
@@ -44,7 +33,6 @@
         }  
         .adFullWidth__adWrapper {
             height: 100px;
-            box-sizing: border-box;
             position: relative;
         }
         .adFullWidth__adBWrapper {
@@ -62,23 +50,23 @@
             left: 10px;
             width: 45px;
             height: 55px;
-            background-image: url(%%FILE:PNG1%%);
+            background-image: url(%%FILE:PNG3%%);
             background-repeat: no-repeat;
             background-position: 0 0;
             background-size: cover;
         }
         .adFullWidth__cta {
-            background: url(%%FILE:PNG6%%) no-repeat 0 0;
+            background: url(%%FILE:PNG2%%) no-repeat 0 0;
             position: absolute;
             z-index: 20;
             left: 10px;
             bottom: 20px;
             height: 30px;
-            width: 89px;
+            width: 340px;
         }
-        @media (min-width: 481px){
-            .adFullWidth__subject {
-            }
+        .adFullWidth__cta-short {
+            height: 30px;
+            width: 89px;
         }
         @media (max-width: 740px){
             .adFullWidth__adWrapper .facia-container__inner {
@@ -86,55 +74,32 @@
             }
         }
         .adFullWidth__adWrapper .slide {
-            height: 250px;
-            width: 100%;
             position: absolute;
-            font-weight: bold;
-            text-align: center;
             background-color: #fff;
+            background-repeat: no-repeat;
             z-index: 10;
             top: 0;  
-            -webkit-transform-origin: top left;
-            -webkit-animation-name: foo;
-            -webkit-animation-duration: 9s;
-            -webkit-animation-iteration-count: infinite;
-            font-size: 40px;
-            color: black;
-        }
-        .adFullWidth__adWrapper .adFullWidth__cta-small {
-            position: absolute;
-            bottom: 20px;
-            left: 110px;
-            width: 249px;
-            height: 30px;
-            background: url(%%FILE:PNG6%%) no-repeat top right;
         }
         .adFullWidth__adWrapper .slide1 {
-            z-index: 10;
-            background: #ffffff url(%%FILE:PNG3%%) no-repeat 50% 50%;
+            background-image: url(%%FILE:PNG4%%);
+            background-position: 50% 50%;
         }
         .adFullWidth__adWrapper .slide2 {
-            background: #ffffff url(%%FILE:PNG4%%) no-repeat 50% 50%;
-            -webkit-animation-delay: 3s;
-            z-index: 9;
+            background-image: url(%%FILE:PNG5%%);
+            background-position: 50% 50%;
         }
         .adFullWidth__adWrapper .slide3 {
-            -webkit-animation-delay: 6s;
-            z-index: 8;
-        }
-        .adFullWidth__adWrapper .slide3 .text_holder {
-            background-image: url(%%FILE:PNG2%%);
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            left: 110px;
-            top: 20px;
-            width: 379px;
+            background-image: url(%%FILE:PNG1%%);
+            background-position:  110px 0;
+            background-color: transparent;
             height: 80px;
+            margin-top: 20px;
         }
-        .adFullWidth__adWrapper .slide3 .car_holder {
+        .adFullWidth__adWrapper .car_holder {
             height: 100%;
-            background: url(%%FILE:JPG1%%) no-repeat 100% 0;
+            background-image: url(%%FILE:JPG1%%);
+            background-repeat: no-repeat;
+            background-position: top right;
         }
         @media (min-width: 741px){
             .adFullWidth__subject {
@@ -142,7 +107,7 @@
                 left: 10px;
                 width: 89px;
                 height: 110px;
-                background-image: url(%%FILE:PNG1%%);
+                background-image: url(%%FILE:PNG3%%);
                 background-repeat: no-repeat;
                 background-position: 0 0;
             }
@@ -150,12 +115,18 @@
             .adFullWidth__adBWrapper .container__body {
                 height: 250px;
             }
+            .adFullWidth__adWrapper .slide {
+                width: 80%;
+                left: 10%;
+                background-size: contain;
+            }
             .adFullWidth__adWrapper .slide1, .adFullWidth__adWrapper .slide2 {
                 height: 250px;
-                background-size: 80%;
             }
             .adFullWidth__adWrapper .slide3 {
-                 left: 0;
+                width: 45%;
+                left: 110px;
+                background-position: left bottom;
             }
         }
         @media (min-width: 981px){
@@ -168,27 +139,7 @@
                 height: 250px;
             }
         }
-        
-        @-webkit-keyframes foo {
-            0% {
-                z-index: 10;
-            }
-            33% {
-                -webkit-transform: translate(0, 250px);
-                z-index: 10;
-            }
-            34% {
-                z-index: -1;
-            }
-            66% {
-                -webkit-transform: translate(0, 0);
-            }
-            100% {
-                z-index: 9;
-            }
-        }
     </style>
-
     <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
         <div class="facia-container__inner">Advertisement</div>
     </div>
@@ -199,16 +150,7 @@
                     <div class="facia-container--layout-front">
                         <div class="facia-container__inner">
                             <div class="container__body">
-                                <div class="slide slide1">
-                                    <div class="adFullWidth__cta-small"></div>
-                                </div>
-                                <div class="slide slide2">
-                                    <div class="adFullWidth__cta-small"></div>
-                                </div>
-                                <div class="slide slide3">
-                                    <div class="text_holder"></div>
-                                    <div class="car_holder"></div>
-                                </div>
+                                <div class="slide slide1"></div>
                                 <div class="adFullWidth__cta"></div>
                                 <div class="adFullWidth__subject"></div>
                             </div>
@@ -231,16 +173,7 @@
                     <div class="facia-container--layout-front">
                         <div class="facia-container__inner">
                             <div class="container__body">
-                                <div class="slide slide1">
-                                    <div class="adFullWidth__cta-small"></div>
-                                </div>
-                                <div class="slide slide2">
-                                    <div class="adFullWidth__cta-small"></div>
-                                </div>
-                                <div class="slide slide3">
-                                    <div class="text_holder"></div>
-                                    <div class="car_holder"></div>
-                                </div>
+                                <div class="slide slide2"></div>
                                 <div class="adFullWidth__cta"></div>
                                 <div class="adFullWidth__subject"></div>
                             </div>
@@ -252,7 +185,7 @@
     </div>
     <div class="ad-slot__label adFullWidth__label"></div>
 </div>
-
+        
 <div class="breakout__html">
     <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
         <div class="facia-container__inner">Advertisement</div>
@@ -264,17 +197,9 @@
                     <div class="facia-container--layout-front">
                         <div class="facia-container__inner">
                             <div class="container__body">
-                                <div class="slide slide1">
-                                    <div class="adFullWidth__cta-small"></div>
-                                </div>
-                                <div class="slide slide2">
-                                    <div class="adFullWidth__cta-small"></div>
-                                </div>
-                                <div class="slide slide3">
-                                    <div class="text_holder"></div>
-                                    <div class="car_holder"></div>
-                                </div>
-                                <div class="adFullWidth__cta"></div>
+                                <div class="slide slide3"></div>
+                                <div class="car_holder"></div>
+                                <div class="adFullWidth__cta adFullWidth__cta-short"></div>
                                 <div class="adFullWidth__subject"></div>
                             </div>
                         </div>

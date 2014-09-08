@@ -15,17 +15,29 @@
             margin-left: 0;
         }
         /* End of nasty hacks */
-        .adTest-adBWrapper .container__body {
+        .ad-slot--top-above-nav .ad-slot__label {
+            display: none;
+        }
+        .top-banner-ad-container--facia-layout .ad-slot--top-banner-ad .ad-slot__label,
+        .ad-slot__label.adFullWidth__label {
+            width: auto;
+            display: block;
+            height: 18px;
+            border-top: 0;
+            text-align: left;
+        }
+        .adFullWidth__adBWrapper .container__body {
             height: 100px;
             position: relative;
             padding-top: 0;
+            margin-left: 0;
         }
-        .adTest-adWrapper .facia-container__inner {
+        .adFullWidth__adWrapper .facia-container__inner {
             background-image: url(%%FILE:PNG4%%);
             background-repeat: no-repeat;
             background-position: 95% 2px;
         }
-        .adTest-adWrapper {
+        .adFullWidth__adWrapper {
             height: 100px;
             box-sizing: border-box;
             background-repeat: no-repeat;
@@ -33,10 +45,10 @@
             position: relative;
             background: url(%%FILE:PNG1%%) no-repeat 66% 0;
         }
-        .adTest-adBWrapper {
+        .adFullWidth__adBWrapper {
             background: url(%%FILE:JPG1%%) repeat-x 12% 0;
         }
-        .adTest-subject {
+        .adFullWidth__subject {
             position: absolute;
             bottom: 5px;
             left: 5%;
@@ -46,7 +58,7 @@
             height: 50px;
             max-width: 300px;
         }
-        .adTest-cta {
+        .adFullWidth__cta {
             background: url(%%FILE:PNG5%%) no-repeat 0 50%;
             background-size: contain;
             position: absolute;
@@ -57,34 +69,34 @@
         }
 
         @media (min-width: 481px){
-            .adTest-subject {
+            .adFullWidth__subject {
                 left: 25%;
             }
         }
 
         @media (max-width: 740px){
-            .adTest-adWrapper .facia-container__inner {
+            .adFullWidth__adWrapper .facia-container__inner {
                 background-size: contain;
             }
         }
         
         @media (min-width: 741px){
-            .adTest-subject {
+            .adFullWidth__subject {
                 bottom: 25px;
                 left: 10%;
                 width: 60%;
                 height: 68px;
             }
-            .adTest-adWrapper,
-            .adTest-adBWrapper .container__body {
+            .adFullWidth__adWrapper,
+            .adFullWidth__adBWrapper .container__body {
                 height: 250px;
             }
-            .adTest-adWrapper .facia-container__inner {
+            .adFullWidth__adWrapper .facia-container__inner {
                 background-image: url(%%FILE:PNG3%%);
                 background-repeat: no-repeat;
                 background-position: 95% 2px;
             }
-            .adTest-cta {
+            .adFullWidth__cta {
                 left: 10%;
                 top: 20px;
                 height: 130px;
@@ -92,15 +104,18 @@
             }
         }
     </style>
-    <div class="adTest-adBWrapper">
+    <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
+        <div class="facia-container__inner">Advertisement</div>
+    </div>
+    <div class="adFullWidth__adBWrapper">
         <a href="%%CLICK_URL_UNESC%%htp://www.theguardian.com">
             <div class="gs-container">
-                <div class="adTest-adWrapper">
+                <div class="adFullWidth__adWrapper">
                     <div class="facia-container--layout-front">
                         <div class="facia-container__inner">
                             <div class="container__body">
-                                <div class="adTest-cta"></div>
-                                <div class="adTest-subject"></div>
+                                <div class="adFullWidth__cta"></div>
+                                <div class="adFullWidth__subject"></div>
                             </div>
                         </div>
                     </div>
