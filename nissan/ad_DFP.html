@@ -90,40 +90,43 @@
             background-color: #fff;
             z-index: 10;
             top: 0px;
-            /*transform-origin*/
-            -webkit-transform-origin: top left;
-               -moz-transform-origin: top left;
-                -ms-transform-origin: top left;
-                 -o-transform-origin: top left;
-                    transform-origin: top left;
-            /*animation-name*/
-            -webkit-animation-name: adFullWidthAn1;
-               -moz-animation-name: adFullWidthAn1;
-                -ms-animation-name: adFullWidthAn1;
-                 -o-animation-name: adFullWidthAn1;
-                    animation-name: adFullWidthAn1;
-            /*animation-duration*/
-            -webkit-animation-duration: 9s;
-               -moz-animation-duration: 9s;
-                -ms-animation-duration: 9s;
-                 -o-animation-duration: 9s;
-                    animation-duration: 9s;
-            /*animation-iteration-count*/
-            -webkit-animation-iteration-count: 1;
-               -moz-animation-iteration-count: 1;
-                -ms-animation-iteration-count: 1;
-                 -o-animation-iteration-count: 1;
-                    animation-iteration-count: 1;
-            /*animation-delay*/
-            -webkit-animation-delay: 3s;
-               -moz-animation-delay: 3s;
-                -ms-animation-delay: 3s;
-                 -o-animation-delay: 3s;
-                    animation-delay: 3s;
             font-size: 40px;
             color: black;
-            -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
-            animation-fill-mode: forwards;
+        }
+        
+        .animationGo .adFullWidth__adWrapper .slide1 {
+        /*transform-origin*/
+        -webkit-transform-origin: top left;
+           -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+             -o-transform-origin: top left;
+                transform-origin: top left;
+        /*animation-name*/
+        -webkit-animation-name: adFullWidthAn1;
+           -moz-animation-name: adFullWidthAn1;
+            -ms-animation-name: adFullWidthAn1;
+             -o-animation-name: adFullWidthAn1;
+                animation-name: adFullWidthAn1;
+        /*animation-duration*/
+        -webkit-animation-duration: 9s;
+           -moz-animation-duration: 9s;
+            -ms-animation-duration: 9s;
+             -o-animation-duration: 9s;
+                animation-duration: 9s;
+        /*animation-iteration-count*/
+        -webkit-animation-iteration-count: 1;
+           -moz-animation-iteration-count: 1;
+            -ms-animation-iteration-count: 1;
+             -o-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+        /*animation-delay*/
+        -webkit-animation-delay: 3s;
+           -moz-animation-delay: 3s;
+            -ms-animation-delay: 3s;
+             -o-animation-delay: 3s;
+                animation-delay: 3s;
+        -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+        animation-fill-mode: forwards;
         }
 
         .adFullWidth__adWrapper .adFullWidth__cta-small {
@@ -144,35 +147,40 @@
             background-image: url(%%FILE:PNG4%%);
             background-repeat: no-repeat;
             background-position: 50% 50%;
-            /*animation-name*/
-            -webkit-animation-name: adFullWidthAn2;
-               -moz-animation-name: adFullWidthAn2;
-                -ms-animation-name: adFullWidthAn2;
-                 -o-animation-name: adFullWidthAn2;
-                    animation-name: adFullWidthAn2;
-            /*animation-duration*/
-            -webkit-animation-duration: 9s;
-               -moz-animation-duration: 9s;
-                -ms-animation-duration: 9s;
-                 -o-animation-duration: 9s;
-                    animation-duration: 9s;
-            /*animation-iteration-count*/
-            -webkit-animation-iteration-count: 1;
-               -moz-animation-iteration-count: 1;
-                -ms-animation-iteration-count: 1;
-                 -o-animation-iteration-count: 1;
-                    animation-iteration-count: 1;
-            /*animation-delay*/
-            -webkit-animation-delay: 3s;
-               -moz-animation-delay: 3s;
-                -ms-animation-delay: 3s;
-                 -o-animation-delay: 3s;
-                    animation-delay: 3s;
             z-index: 9;
             top: 250px;
         }
+        .animationGo .adFullWidth__adWrapper .slide2 {
+        /*animation-name*/
+        -webkit-animation-name: adFullWidthAn2;
+           -moz-animation-name: adFullWidthAn2;
+            -ms-animation-name: adFullWidthAn2;
+             -o-animation-name: adFullWidthAn2;
+                animation-name: adFullWidthAn2;
+        /*animation-duration*/
+        -webkit-animation-duration: 9s;
+           -moz-animation-duration: 9s;
+            -ms-animation-duration: 9s;
+             -o-animation-duration: 9s;
+                animation-duration: 9s;
+        /*animation-iteration-count*/
+        -webkit-animation-iteration-count: 1;
+           -moz-animation-iteration-count: 1;
+            -ms-animation-iteration-count: 1;
+             -o-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+        /*animation-delay*/
+        -webkit-animation-delay: 3s;
+           -moz-animation-delay: 3s;
+            -ms-animation-delay: 3s;
+             -o-animation-delay: 3s;
+                animation-delay: 3s;
+        }
         .adFullWidth__adWrapper .slide3 {
-
+            z-index: 8;
+            top: 250px;
+        }
+        .animationGo .adFullWidth__adWrapper .slide3 {
             /*animation-name*/
             -webkit-animation-name: adFullWidthAn3;
                -moz-animation-name: adFullWidthAn3;
@@ -197,8 +205,6 @@
                 -ms-animation-delay: 6s;
                  -o-animation-delay: 6s;
                     animation-delay: 6s;
-            z-index: 8;
-            top: 250px;
             -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
         }
@@ -457,7 +463,7 @@
     <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
         <div class="facia-container__inner">Advertisement</div>
     </div>
-    <div class="adFullWidth__adBWrapper">
+    <div class="adFullWidth__adBWrapper animationGo">
         <a href="http://www.theguardian.com">
             <div class="gs-container">
                 <div class="adFullWidth__adWrapper">
@@ -517,6 +523,35 @@
     </div>
     <div class="ad-slot__label adFullWidth__label"></div>
 </div>
+<script type="text/javascript" class="breakout__script">
+    (function () {
+        if (typeof require === 'function') {
+            require([
+                'bean',
+                'bonzo',
+                'qwery',
+                'common/utils/$',
+                'common/utils/mediator'
+            ], function (
+                bean,
+                bonzo,
+                qwery,
+                $,
+                mediator
+            ) {
+                var $adContainerMid = $('#dfp-ad--merchandising-high .adFullWidth__adBWrapper'),
+                    listener = function () {
+                        if ((window.pageYOffset + bonzo.viewport().height) > ($adContainerMid.offset().top)) {
+                            // wrap image in a link
+                            $adContainerMid.addClass('animationGo');
+                            mediator.off('window:scroll', listener);
+                        }
+                    };
+                mediator.on('window:scroll', listener);
+            });
+        }
+    })();
+</script>
 
 <div class="breakout__html">
     <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
@@ -550,3 +585,32 @@
     </div>
     <div class="ad-slot__label adFullWidth__label"></div>
 </div>
+<script type="text/javascript" class="breakout__script">
+    (function () {
+        if (typeof require === 'function') {
+            require([
+                'bean',
+                'bonzo',
+                'qwery',
+                'common/utils/$',
+                'common/utils/mediator'
+            ], function (
+                bean,
+                bonzo,
+                qwery,
+                $,
+                mediator
+            ) {
+                var $adContainerBot = $('#dfp-ad--merchandising .adFullWidth__adBWrapper'),
+                    listener = function () {
+                        if ((window.pageYOffset + bonzo.viewport().height) > ($adContainerBot.offset().top)) {
+                            // wrap image in a link
+                            $adContainerBot.addClass('animationGo');
+                            mediator.off('window:scroll', listener);
+                        }
+                    };
+                mediator.on('window:scroll', listener);
+            });
+        }
+    })();
+</script>
