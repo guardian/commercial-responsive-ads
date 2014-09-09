@@ -31,12 +31,12 @@
             position: relative;
             padding-top: 0;
         }  
-        .adFullWidth__adWrapper .facia-container__inner {
-
-        }
         .adFullWidth__adWrapper {
             height: 100px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
             box-sizing: border-box;
+            box-sizing: $box;
             position: relative;
         }
         .adFullWidth__adBWrapper {
@@ -57,6 +57,8 @@
             background-image: url(%%FILE:PNG1%%);
             background-repeat: no-repeat;
             background-position: 0 0;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
             background-size: cover;
         }
         .adFullWidth__cta {
@@ -74,6 +76,8 @@
         }
         @media (max-width: 740px){
             .adFullWidth__adWrapper .facia-container__inner {
+                -webkit-background-size: contain;
+                -moz-background-size: contain;
                 background-size: contain;
             }
         }
@@ -85,15 +89,43 @@
             text-align: center;
             background-color: #fff;
             z-index: 10;
-            top: 0px;  
+            top: 0px;
+            /*transform-origin*/
             -webkit-transform-origin: top left;
-            -webkit-animation-name: foo;
+               -moz-transform-origin: top left;
+                -ms-transform-origin: top left;
+                 -o-transform-origin: top left;
+                    transform-origin: top left;
+            /*animation-name*/
+            -webkit-animation-name: adFullWidthAn1;
+               -moz-animation-name: adFullWidthAn1;
+                -ms-animation-name: adFullWidthAn1;
+                 -o-animation-name: adFullWidthAn1;
+                    animation-name: adFullWidthAn1;
+            /*animation-duration*/
             -webkit-animation-duration: 9s;
-            -webkit-animation-iteration-count: infinite;
+               -moz-animation-duration: 9s;
+                -ms-animation-duration: 9s;
+                 -o-animation-duration: 9s;
+                    animation-duration: 9s;
+            /*animation-iteration-count*/
+            -webkit-animation-iteration-count: 1;
+               -moz-animation-iteration-count: 1;
+                -ms-animation-iteration-count: 1;
+                 -o-animation-iteration-count: 1;
+                    animation-iteration-count: 1;
+            /*animation-delay*/
             -webkit-animation-delay: 3s;
+               -moz-animation-delay: 3s;
+                -ms-animation-delay: 3s;
+                 -o-animation-delay: 3s;
+                    animation-delay: 3s;
             font-size: 40px;
             color: black;
+            -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+            animation-fill-mode: forwards;
         }
+
         .adFullWidth__adWrapper .adFullWidth__cta-small {
             position: absolute;
             bottom: 20px;
@@ -112,24 +144,69 @@
             background-image: url(%%FILE:PNG4%%);
             background-repeat: no-repeat;
             background-position: 50% 50%;
-            -webkit-animation-name: foofoo;
+            /*animation-name*/
+            -webkit-animation-name: adFullWidthAn2;
+               -moz-animation-name: adFullWidthAn2;
+                -ms-animation-name: adFullWidthAn2;
+                 -o-animation-name: adFullWidthAn2;
+                    animation-name: adFullWidthAn2;
+            /*animation-duration*/
             -webkit-animation-duration: 9s;
-            -webkit-animation-iteration-count: infinite;
+               -moz-animation-duration: 9s;
+                -ms-animation-duration: 9s;
+                 -o-animation-duration: 9s;
+                    animation-duration: 9s;
+            /*animation-iteration-count*/
+            -webkit-animation-iteration-count: 1;
+               -moz-animation-iteration-count: 1;
+                -ms-animation-iteration-count: 1;
+                 -o-animation-iteration-count: 1;
+                    animation-iteration-count: 1;
+            /*animation-delay*/
             -webkit-animation-delay: 3s;
+               -moz-animation-delay: 3s;
+                -ms-animation-delay: 3s;
+                 -o-animation-delay: 3s;
+                    animation-delay: 3s;
             z-index: 9;
-            top: -250px;
+            top: 250px;
         }
         .adFullWidth__adWrapper .slide3 {
-            -webkit-animation-name: foofoo;
+
+            /*animation-name*/
+            -webkit-animation-name: adFullWidthAn3;
+               -moz-animation-name: adFullWidthAn3;
+                -ms-animation-name: adFullWidthAn3;
+                 -o-animation-name: adFullWidthAn3;
+                    animation-name: adFullWidthAn3;
+            /*animation-duration*/
             -webkit-animation-duration: 9s;
-            -webkit-animation-iteration-count: infinite;
+               -moz-animation-duration: 9s;
+                -ms-animation-duration: 9s;
+                 -o-animation-duration: 9s;
+                    animation-duration: 9s;
+            /*animation-iteration-count*/
+            -webkit-animation-iteration-count: 1;
+               -moz-animation-iteration-count: 1;
+                -ms-animation-iteration-count: 1;
+                 -o-animation-iteration-count: 1;
+                    animation-iteration-count: 1;
+            /*animation-delay*/
             -webkit-animation-delay: 6s;
+               -moz-animation-delay: 6s;
+                -ms-animation-delay: 6s;
+                 -o-animation-delay: 6s;
+                    animation-delay: 6s;
             z-index: 8;
-            top: -250px;
+            top: 250px;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
         }
         .adFullWidth__adWrapper .slide3 .text_holder {
             background-image: url(%%FILE:PNG2%%);
             background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
             background-size: cover;
             position: absolute;
             left: 110px;
@@ -174,35 +251,90 @@
                 height: 250px;
             }
         }
-        
-        @-webkit-keyframes foo {
+        @-moz-keyframes adFullWidthAn1 {
             0% {
                 z-index: 10;
             }
             33.3333% {
-                -webkit-transform: translate(0, 250px);
+                -moz-transform: translate(0, -250px);
                 z-index: 10;
             }
             34% {
                 z-index: -1;
             }
             66.6666% {
+                -moz-transform: translate(0, 250px);
+            }
+            100% {
+                z-index: 9;
+            }
+            
+        }
+        @-webkit-keyframes adFullWidthAn1 {
+            0% {
+                z-index: 10;
+            }
+            33.3333% {
                 -webkit-transform: translate(0, -250px);
+                z-index: 10;
+            }
+            34% {
+                z-index: -1;
+            }
+            66.6666% {
+                -webkit-transform: translate(0, 250px);
             }
             100% {
                 z-index: 9;
             }
         }
-        @-webkit-keyframes foofoo {
+        @-o-keyframes adFullWidthAn1 {
+            0% {
+                z-index: 10;
+            }
+            33.3333% {
+                -o-transform: translate(0, -250px);
+                z-index: 10;
+            }
+            34% {
+                z-index: -1;
+            }
+            66.6666% {
+                -o-transform: translate(0, 250px);
+            }
+            100% {
+                z-index: 9;
+            }
+        }
+        @keyframes adFullWidthAn1 {
+            0% {
+                z-index: 10;
+            }
+            33.3333% {
+                transform: translate(0, -250px);
+                z-index: 10;
+            }
+            34% {
+                z-index: -1;
+            }
+            66.6666% {
+                transform: translate(0, 250px);
+            }
+            100% {
+                z-index: 9;
+            }
+        }            
+        
+        @-moz-keyframes adFullWidthAn2 {
             0% {
                 z-index: -1;
             }
             33.3333% {
-                -webkit-transform: translate(0, 250px);
+                -moz-transform: translate(0, -250px);
                 z-index: 10;
             }
             66.6666% {
-                -webkit-transform: translate(0, 500px);
+                -moz-transform: translate(0, -500px);
                 z-index: 10;
             }
             67% {
@@ -210,6 +342,115 @@
             }
             100% {
                 z-index: -1;
+            }
+        }           
+        @-webkit-keyframes adFullWidthAn2 {
+            0% {
+                z-index: -1;
+            }
+            33.3333% {
+                -webkit-transform: translate(0, -250px);
+                z-index: 10;
+            }
+            66.6666% {
+                -webkit-transform: translate(0, -500px);
+                z-index: 10;
+            }
+            67% {
+                z-index: -1;
+            }
+            100% {
+                z-index: -1;
+            }
+        }
+        @-o-keyframes adFullWidthAn2 {
+            0% {
+                z-index: -1;
+            }
+            33.3333% {
+                -o-transform: translate(0, -250px);
+                z-index: 10;
+            }
+            66.6666% {
+                -o-transform: translate(0, -500px);
+                z-index: 10;
+            }
+            67% {
+                z-index: -1;
+            }
+            100% {
+                z-index: -1;
+            }
+        }
+        @keyframes adFullWidthAn2 {
+            0% {
+                z-index: -1;
+            }
+            33.3333% {
+                transform: translate(0, -250px);
+                z-index: 10;
+            }
+            66.6666% {
+                transform: translate(0, -500px);
+                z-index: 10;
+            }
+            67% {
+                z-index: -1;
+            }
+            100% {
+                z-index: -1;
+            }
+        }
+        @-webkit-keyframes adFullWidthAn3 {
+            0% {
+                z-index: -1;
+            }
+            33.3333% {
+                -webkit-transform: translate(0, -250px);
+                z-index: 10;
+            }
+            100% {
+                -webkit-transform: translate(0, -250px);
+                z-index: 11;
+            }
+        }
+        @-moz-keyframes adFullWidthAn3 {
+            0% {
+                z-index: -1;
+            }
+            33.3333% {
+                -moz-transform: translate(0, -250px);
+                z-index: 10;
+            }
+            100% {
+                -moz-transform: translate(0, -250px);
+                z-index: 11;
+            }
+        }
+        @-o-keyframes adFullWidthAn3 {
+            0% {
+                z-index: -1;
+            }
+            33.3333% {
+                -o-transform: translate(0, -250px);
+                z-index: 10;
+            }
+            100% {
+                -o-transform: translate(0, -250px);
+                z-index: 11;
+            }
+        }
+        @keyframes adFullWidthAn3 {
+            0% {
+                z-index: -1;
+            }
+            33.3333% {
+                transform: translate(0, -250px);
+                z-index: 10;
+            }
+            100% {
+                transform: translate(0, -250px);
+                z-index: 11;
             }
         }
     </style>
@@ -226,7 +467,7 @@
                                 <div class="slide slide1">
                                     <div class="adFullWidth__cta-small"></div>
                                 </div>
-                               <div class="slide slide2">
+                                <div class="slide slide2">
                                     <div class="adFullWidth__cta-small"></div>
                                 </div>
                                  <div class="slide slide3">
