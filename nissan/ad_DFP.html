@@ -1,16 +1,5 @@
 <div class="breakout__html">
     <style type="text/css">
-        body {
-            background-color: grey;
-            padding: 0;
-            margin: 0;
-        }
-    
-        /* Temp, needed for local testing only */
-        .gs-container {
-            max-width: 1300px;
-            margin: 0 auto;
-        } 
         /* These are over-riding site styles USE WITH CAUTION */
         .top-banner-ad-container--desktop,
         .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
@@ -42,6 +31,9 @@
             position: relative;
             padding-top: 0;
         }  
+        .adFullWidth__adWrapper .facia-container__inner {
+
+        }
         .adFullWidth__adWrapper {
             height: 100px;
             box-sizing: border-box;
@@ -93,11 +85,12 @@
             text-align: center;
             background-color: #fff;
             z-index: 10;
-            top: 0;  
+            top: 0px;  
             -webkit-transform-origin: top left;
             -webkit-animation-name: foo;
             -webkit-animation-duration: 9s;
             -webkit-animation-iteration-count: infinite;
+            -webkit-animation-delay: 3s;
             font-size: 40px;
             color: black;
         }
@@ -111,16 +104,28 @@
         }
         .adFullWidth__adWrapper .slide1 {
             z-index: 10;
-            background: #ffffff url(%%FILE:PNG3%%) no-repeat 50% 50%;
+            background-image: url(%%FILE:PNG3%%);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
         }
         .adFullWidth__adWrapper .slide2 {
-            background: #ffffff url(%%FILE:PNG4%%) no-repeat 50% 50%;
+            background-image: url(%%FILE:PNG4%%);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            -webkit-animation-name: foofoo;
+            -webkit-animation-duration: 9s;
+            -webkit-animation-iteration-count: infinite;
             -webkit-animation-delay: 3s;
             z-index: 9;
+            top: -250px;
         }
         .adFullWidth__adWrapper .slide3 {
+            -webkit-animation-name: foofoo;
+            -webkit-animation-duration: 9s;
+            -webkit-animation-iteration-count: infinite;
             -webkit-animation-delay: 6s;
             z-index: 8;
+            top: -250px;
         }
         .adFullWidth__adWrapper .slide3 .text_holder {
             background-image: url(%%FILE:PNG2%%);
@@ -149,6 +154,7 @@
             .adFullWidth__adWrapper,
             .adFullWidth__adBWrapper .container__body {
                 height: 250px;
+                background-color: #fff;
             }
             .adFullWidth__adWrapper .slide1, .adFullWidth__adWrapper .slide2 {
                 height: 250px;
@@ -173,22 +179,40 @@
             0% {
                 z-index: 10;
             }
-            33% {
+            33.3333% {
                 -webkit-transform: translate(0, 250px);
                 z-index: 10;
             }
             34% {
                 z-index: -1;
             }
-            66% {
-                -webkit-transform: translate(0, 0);
+            66.6666% {
+                -webkit-transform: translate(0, -250px);
             }
             100% {
                 z-index: 9;
             }
         }
+        @-webkit-keyframes foofoo {
+            0% {
+                z-index: -1;
+            }
+            33.3333% {
+                -webkit-transform: translate(0, 250px);
+                z-index: 10;
+            }
+            66.6666% {
+                -webkit-transform: translate(0, 500px);
+                z-index: 10;
+            }
+            67% {
+                z-index: -1;
+            }
+            100% {
+                z-index: -1;
+            }
+        }
     </style>
-
     <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
         <div class="facia-container__inner">Advertisement</div>
     </div>
@@ -202,10 +226,10 @@
                                 <div class="slide slide1">
                                     <div class="adFullWidth__cta-small"></div>
                                 </div>
-                                <div class="slide slide2">
+                               <div class="slide slide2">
                                     <div class="adFullWidth__cta-small"></div>
                                 </div>
-                                <div class="slide slide3">
+                                 <div class="slide slide3">
                                     <div class="text_holder"></div>
                                     <div class="car_holder"></div>
                                 </div>
