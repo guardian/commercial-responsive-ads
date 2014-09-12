@@ -19,466 +19,458 @@
                 max-width: 1300px;
                 margin: 0 auto;
             } 
-            /* These are over-riding site styles USE WITH CAUTION */
-            .top-banner-ad-container--desktop,
-            .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
-                display: block !important;
-                max-width: none !important;
-            }
-            .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
-                width: 100% !important;
-                padding: 0 !important;
-                margin-left: 0 !important;
-            }
-            /* End of nasty hacks */
-            .ad-slot--top-above-nav .ad-slot__label {
-                display: none;
-            }
-            .top-banner-ad-container--facia-layout .ad-slot--top-banner-ad .ad-slot__label,
-            .ad-slot__label.adFullWidth__label {
-                width: auto;
-                display: block;
-                height: 18px;
-                border-top: 0;
-                text-align: left;
-            }
-            .adFullWidth__adBWrapper .container__body {
-                margin-left: 0;
-                margin-right: 0;
-                width: 100%;
-                height: 100px;
-                position: relative;
-                padding-top: 0;
-            }  
-            .adFullWidth__adWrapper {
-                height: 100px;
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-                box-sizing: $box;
-                position: relative;
-            }
-            .adFullWidth__adBWrapper {
-                background: white;
-                overflow: hidden;
-            }
-            .adFullWidth__adBWrapper .gs-border {
-                border: 1px solid #dcdcdc;
-                border-width: 1px 0;
-            }
-            .adFullWidth__subject {
-                position: absolute;
-                z-index: 20;
-                top: 0;
-                left: 10px;
-                width: 45px;
-                height: 55px;
-                background-image: url(images/nissan_logo.png);
-                background-repeat: no-repeat;
-                background-position: 0 0;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                background-size: cover;
-            }
-            .adFullWidth__cta {
-                background: url(images/nissan_button.png) no-repeat 0 0;
-                position: absolute;
-                z-index: 20;
-                left: 10px;
-                bottom: 20px;
-                height: 30px;
-                width: 89px;
-            }
-            @media (min-width: 481px){
-                .adFullWidth__subject {
-                }
-            }
-            @media (max-width: 740px){
-                .adFullWidth__adWrapper .facia-container__inner {
-                    -webkit-background-size: contain;
-                    -moz-background-size: contain;
-                    background-size: contain;
-                }
-            }
-            .adFullWidth__adWrapper .slide {
-                height: 250px;
-                width: 100%;
-                position: absolute;
-                font-weight: bold;
-                text-align: center;
-                background-color: #fff;
-                z-index: 10;
-                top: 0px;
-                /*transform-origin*/
-                -webkit-transform-origin: top left;
-                   -moz-transform-origin: top left;
-                    -ms-transform-origin: top left;
-                     -o-transform-origin: top left;
-                        transform-origin: top left;
-                /*animation-name*/
-                -webkit-animation-name: adFullWidthAn1;
-                   -moz-animation-name: adFullWidthAn1;
-                    -ms-animation-name: adFullWidthAn1;
-                     -o-animation-name: adFullWidthAn1;
-                        animation-name: adFullWidthAn1;
-                /*animation-duration*/
-                -webkit-animation-duration: 9s;
-                   -moz-animation-duration: 9s;
-                    -ms-animation-duration: 9s;
-                     -o-animation-duration: 9s;
-                        animation-duration: 9s;
-                /*animation-iteration-count*/
-                -webkit-animation-iteration-count: 1;
-                   -moz-animation-iteration-count: 1;
-                    -ms-animation-iteration-count: 1;
-                     -o-animation-iteration-count: 1;
-                        animation-iteration-count: 1;
-                /*animation-delay*/
-                -webkit-animation-delay: 3s;
-                   -moz-animation-delay: 3s;
-                    -ms-animation-delay: 3s;
-                     -o-animation-delay: 3s;
-                        animation-delay: 3s;
-                font-size: 40px;
-                color: black;
-                -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
-                animation-fill-mode: forwards;
-            }
 
-            .adFullWidth__adWrapper .adFullWidth__cta-small {
-                position: absolute;
-                bottom: 20px;
-                left: 110px;
-                width: 249px;
-                height: 30px;
-                background: url(images/nissan_button.png) no-repeat top right;
-            }
-            .adFullWidth__adWrapper .slide1 {
-                z-index: 10;
-                background-image: url(images/nissan_most_owned.png);
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-            }
-            .adFullWidth__adWrapper .slide2 {
-                background-image: url(images/nissan_most_proven.png);
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                /*animation-name*/
-                -webkit-animation-name: adFullWidthAn2;
-                   -moz-animation-name: adFullWidthAn2;
-                    -ms-animation-name: adFullWidthAn2;
-                     -o-animation-name: adFullWidthAn2;
-                        animation-name: adFullWidthAn2;
-                /*animation-duration*/
-                -webkit-animation-duration: 9s;
-                   -moz-animation-duration: 9s;
-                    -ms-animation-duration: 9s;
-                     -o-animation-duration: 9s;
-                        animation-duration: 9s;
-                /*animation-iteration-count*/
-                -webkit-animation-iteration-count: 1;
-                   -moz-animation-iteration-count: 1;
-                    -ms-animation-iteration-count: 1;
-                     -o-animation-iteration-count: 1;
-                        animation-iteration-count: 1;
-                /*animation-delay*/
-                -webkit-animation-delay: 3s;
-                   -moz-animation-delay: 3s;
-                    -ms-animation-delay: 3s;
-                     -o-animation-delay: 3s;
-                        animation-delay: 3s;
-                z-index: 9;
-                top: 250px;
-            }
-            .adFullWidth__adWrapper .slide3 {
-
-                /*animation-name*/
-                -webkit-animation-name: adFullWidthAn3;
-                   -moz-animation-name: adFullWidthAn3;
-                    -ms-animation-name: adFullWidthAn3;
-                     -o-animation-name: adFullWidthAn3;
-                        animation-name: adFullWidthAn3;
-                /*animation-duration*/
-                -webkit-animation-duration: 9s;
-                   -moz-animation-duration: 9s;
-                    -ms-animation-duration: 9s;
-                     -o-animation-duration: 9s;
-                        animation-duration: 9s;
-                /*animation-iteration-count*/
-                -webkit-animation-iteration-count: 1;
-                   -moz-animation-iteration-count: 1;
-                    -ms-animation-iteration-count: 1;
-                     -o-animation-iteration-count: 1;
-                        animation-iteration-count: 1;
-                /*animation-delay*/
-                -webkit-animation-delay: 6s;
-                   -moz-animation-delay: 6s;
-                    -ms-animation-delay: 6s;
-                     -o-animation-delay: 6s;
-                        animation-delay: 6s;
-                z-index: 8;
-                top: 250px;
-                -webkit-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
-            }
-            .adFullWidth__adWrapper .slide3 .text_holder {
-                background-image: url(images/nissan_100percent.png);
-                background-repeat: no-repeat;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                background-size: cover;
-                position: absolute;
-                left: 110px;
-                top: 20px;
-                width: 379px;
-                height: 80px;
-            }
-            .adFullWidth__adWrapper .slide3 .car_holder {
-                height: 100%;
-                background: url(images/nissan_car.jpg) no-repeat 100% 0;
-            }
-            @media (min-width: 741px){
+                /* These are over-riding site styles USE WITH CAUTION */
+                .top-banner-ad-container--desktop,
+                .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+                    display: block !important;
+                    max-width: none !important;
+                }
+                .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+                    width: 100% !important;
+                    padding: 0 !important;
+                    margin-left: 0 !important;
+                }
+                /* End of nasty hacks */
+                .ad-slot--top-above-nav .ad-slot__label {
+                    display: none;
+                }
+                .top-banner-ad-container--facia-layout .ad-slot--top-banner-ad .ad-slot__label,
+                .ad-slot__label.adFullWidth__label {
+                    width: auto;
+                    display: block;
+                    height: 18px;
+                    border-top: 0;
+                    text-align: left;
+                }
+                .adFullWidth__adBWrapper .container__body {
+                    margin-left: 0;
+                    margin-right: 0;
+                    width: 100%;
+                    height: 100px;
+                    position: relative;
+                    padding-top: 0;
+                }  
+                .adFullWidth__adWrapper {
+                    height: 100px;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    box-sizing: $box;
+                    position: relative;
+                }
+                .adFullWidth__adBWrapper {
+                    background: white;
+                    overflow: hidden;
+                }
+                .adFullWidth__adBWrapper .gs-border {
+                    border: 1px solid #dcdcdc;
+                    border-width: 1px 0;
+                }
                 .adFullWidth__subject {
+                    position: absolute;
+                    z-index: 20;
                     top: 0;
                     left: 10px;
-                    width: 89px;
-                    height: 110px;
-                    background-image: url(images/nissan_logo.png);
+                    width: 45px;
+                    height: 55px;
+                    background-image: url(%%FILE:PNG1%%);
                     background-repeat: no-repeat;
                     background-position: 0 0;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    background-size: cover;
                 }
-                .adFullWidth__adWrapper,
-                .adFullWidth__adBWrapper .container__body {
+                .adFullWidth__cta {
+                    background: url(%%FILE:PNG6%%) no-repeat 0 0;
+                    position: absolute;
+                    z-index: 20;
+                    left: 10px;
+                    bottom: 20px;
+                    height: 30px;
+                    width: 89px;
+                }
+                @media (min-width: 481px){
+                    .adFullWidth__subject {
+                    }
+                }
+                @media (max-width: 740px){
+                    .adFullWidth__adWrapper .facia-container__inner {
+                        -webkit-background-size: contain;
+                        -moz-background-size: contain;
+                        background-size: contain;
+                    }
+                }
+                .adFullWidth__adWrapper .slide {
                     height: 250px;
+                    width: 100%;
+                    position: absolute;
+                    font-weight: bold;
+                    text-align: center;
                     background-color: #fff;
+                    z-index: 10;
+                    top: 0px;
+                    /*transform-origin*/
+                    -webkit-transform-origin: top left;
+                       -moz-transform-origin: top left;
+                        -ms-transform-origin: top left;
+                         -o-transform-origin: top left;
+                            transform-origin: top left;
+                    /*animation-name*/
+                    -webkit-animation-name: adFullWidthAn1;
+                       -moz-animation-name: adFullWidthAn1;
+                        -ms-animation-name: adFullWidthAn1;
+                         -o-animation-name: adFullWidthAn1;
+                            animation-name: adFullWidthAn1;
+                    /*animation-duration*/
+                    -webkit-animation-duration: 9s;
+                       -moz-animation-duration: 9s;
+                        -ms-animation-duration: 9s;
+                         -o-animation-duration: 9s;
+                            animation-duration: 9s;
+                    /*animation-iteration-count*/
+                    -webkit-animation-iteration-count: 1;
+                       -moz-animation-iteration-count: 1;
+                        -ms-animation-iteration-count: 1;
+                         -o-animation-iteration-count: 1;
+                            animation-iteration-count: 1;
+                    /*animation-delay*/
+                    -webkit-animation-delay: 0s;
+                       -moz-animation-delay: 0s;
+                        -ms-animation-delay: 0s;
+                         -o-animation-delay: 0s;
+                            animation-delay: 0s;  
+                    -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+                    animation-fill-mode: forwards;
+                    font-size: 40px;
+                    color: black;
                 }
-                .adFullWidth__adWrapper .slide1, .adFullWidth__adWrapper .slide2 {
-                    height: 250px;
-                    background-size: 80%;
+                .adFullWidth__adWrapper .slide1 {
+                    z-index: 10;
+                    background-image: url(%%FILE:PNG3%%);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                }
+                .animationGo.adFullWidth__top .adFullWidth__adWrapper .slide1 {
+                    -webkit-animation-delay: 1s;
+                       -moz-animation-delay: 1s;
+                        -ms-animation-delay: 1s;
+                         -o-animation-delay: 1s;
+                            animation-delay: 1s;   
+                }
+                .adFullWidth__adWrapper .slide2 {
+                    background-image: url(%%FILE:PNG4%%);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    z-index: 9;
+                    top: 250px;
+                }
+                .animationGo .adFullWidth__adWrapper .slide2 {
+                    /*animation-name*/
+                    -webkit-animation-name: adFullWidthAn2;
+                       -moz-animation-name: adFullWidthAn2;
+                        -ms-animation-name: adFullWidthAn2;
+                         -o-animation-name: adFullWidthAn2;
+                            animation-name: adFullWidthAn2;
+                    /*animation-delay*/
+                    -webkit-animation-delay: 0s;
+                       -moz-animation-delay: 0s;
+                        -ms-animation-delay: 0s;
+                         -o-animation-delay: 0s;
+                            animation-delay: 0s;  
+                }
+                .animationGo.adFullWidth__top .adFullWidth__adWrapper .slide2 {
+                    -webkit-animation-delay: 1s;
+                       -moz-animation-delay: 1s;
+                        -ms-animation-delay: 1s;
+                         -o-animation-delay: 1s;
+                            animation-delay: 1s;   
                 }
                 .adFullWidth__adWrapper .slide3 {
-                     left: 0;
+                    z-index: 8;
+                    top: 250px;
                 }
-            }
-            @media (min-width: 981px){
-                .adFullWidth__adWrapper .slide {
-                    width: 100%;
+                .animationGo .adFullWidth__adWrapper .slide3 {
+                    /*animation-name*/
+                    -webkit-animation-name: adFullWidthAn3;
+                       -moz-animation-name: adFullWidthAn3;
+                        -ms-animation-name: adFullWidthAn3;
+                         -o-animation-name: adFullWidthAn3;
+                            animation-name: adFullWidthAn3;
+                    /*animation-delay*/
+                    -webkit-animation-delay: 3s;
+                       -moz-animation-delay: 3s;
+                        -ms-animation-delay: 3s;
+                         -o-animation-delay: 3s;
+                            animation-delay: 3s; 
+                    -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
                 }
-                .adFullWidth__adWrapper .slide1, .adFullWidth__adWrapper .slide2 {
-                    background-size: auto;
-                    left: 0;
-                    height: 250px;
+                .animationGo.adFullWidth__top .adFullWidth__adWrapper .slide3 {
+                    -webkit-animation-delay: 4s;
+                       -moz-animation-delay: 4s;
+                        -ms-animation-delay: 4s;
+                         -o-animation-delay: 4s;
+                            animation-delay: 4s;   
                 }
-            }
-            @-moz-keyframes adFullWidthAn1 {
-                0% {
-                    z-index: 10;
+                .adFullWidth__adWrapper .slide3 .text_holder {
+                    background-image: url(%%FILE:PNG2%%);
+                    background-repeat: no-repeat;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    background-size: cover;
+                    position: absolute;
+                    left: 110px;
+                    top: 20px;
+                    width: 379px;
+                    height: 80px;
                 }
-                33.3333% {
-                    -moz-transform: translate(0, -250px);
-                    z-index: 10;
+                .adFullWidth__adWrapper .slide3 .car_holder {
+                    height: 100%;
+                    background: url(%%FILE:JPG1%%) no-repeat 100% 0;
                 }
-                34% {
-                    z-index: -1;
+                @media (min-width: 741px){
+                    .adFullWidth__subject {
+                        top: 0;
+                        left: 10px;
+                        width: 89px;
+                        height: 110px;
+                        background-image: url(%%FILE:PNG1%%);
+                        background-repeat: no-repeat;
+                        background-position: 0 0;
+                    }
+                    .adFullWidth__adWrapper,
+                    .adFullWidth__adBWrapper .container__body {
+                        height: 250px;
+                        background-color: #fff;
+                    }
+                    .adFullWidth__adWrapper .slide1, .adFullWidth__adWrapper .slide2 {
+                        height: 250px;
+                        background-size: 80%;
+                    }
+                    .adFullWidth__adWrapper .slide3 {
+                         left: 0;
+                    }
                 }
-                66.6666% {
-                    -moz-transform: translate(0, 250px);
+                @media (min-width: 981px){
+                    .adFullWidth__adWrapper .slide {
+                        width: 100%;
+                    }
+                    .adFullWidth__adWrapper .slide1, .adFullWidth__adWrapper .slide2 {
+                        background-size: auto;
+                        left: 0;
+                        height: 250px;
+                    }
                 }
-                100% {
-                    z-index: 9;
-                }
-                
-            }
-            @-webkit-keyframes adFullWidthAn1 {
-                0% {
-                    z-index: 10;
-                }
-                33.3333% {
-                    -webkit-transform: translate(0, -250px);
-                    z-index: 10;
-                }
-                34% {
-                    z-index: -1;
-                }
-                66.6666% {
-                    -webkit-transform: translate(0, 250px);
-                }
-                100% {
-                    z-index: 9;
-                }
-            }
-            @-o-keyframes adFullWidthAn1 {
-                0% {
-                    z-index: 10;
-                }
-                33.3333% {
-                    -o-transform: translate(0, -250px);
-                    z-index: 10;
-                }
-                34% {
-                    z-index: -1;
-                }
-                66.6666% {
-                    -o-transform: translate(0, 250px);
-                }
-                100% {
-                    z-index: 9;
-                }
-            }
-            @keyframes adFullWidthAn1 {
-                0% {
-                    z-index: 10;
-                }
-                33.3333% {
-                    transform: translate(0, -250px);
-                    z-index: 10;
-                }
-                34% {
-                    z-index: -1;
-                }
-                66.6666% {
-                    transform: translate(0, 250px);
-                }
-                100% {
-                    z-index: 9;
-                }
-            }            
+                @-moz-keyframes adFullWidthAn1 {
+                    0% {
+                        z-index: 10;
+                    }
+                    33.3333% {
+                        -moz-transform: translate(0, -250px);
+                        z-index: 10;
+                    }
+                    34% {
+                        z-index: -1;
+                    }
+                    66.6666% {
+                        -moz-transform: translate(0, 250px);
+                    }
+                    100% {
+                        z-index: 9;
+                    }
             
-            @-moz-keyframes adFullWidthAn2 {
-                0% {
-                    z-index: -1;
                 }
-                33.3333% {
-                    -moz-transform: translate(0, -250px);
-                    z-index: 10;
+                @-webkit-keyframes adFullWidthAn1 {
+                    0% {
+                        z-index: 10;
+                    }
+                    33.3333% {
+                        -webkit-transform: translate(0, -250px);
+                        z-index: 10;
+                    }
+                    34% {
+                        z-index: -1;
+                    }
+                    66.6666% {
+                        -webkit-transform: translate(0, 250px);
+                    }
+                    100% {
+                        z-index: 9;
+                    }
                 }
-                66.6666% {
-                    -moz-transform: translate(0, -500px);
-                    z-index: 10;
+                @-o-keyframes adFullWidthAn1 {
+                    0% {
+                        z-index: 10;
+                    }
+                    33.3333% {
+                        -o-transform: translate(0, -250px);
+                        z-index: 10;
+                    }
+                    34% {
+                        z-index: -1;
+                    }
+                    66.6666% {
+                        -o-transform: translate(0, 250px);
+                    }
+                    100% {
+                        z-index: 9;
+                    }
                 }
-                67% {
-                    z-index: -1;
+                @keyframes adFullWidthAn1 {
+                    0% {
+                        z-index: 10;
+                    }
+                    33.3333% {
+                        transform: translate(0, -250px);
+                        z-index: 10;
+                    }
+                    34% {
+                        z-index: -1;
+                    }
+                    66.6666% {
+                        transform: translate(0, 250px);
+                    }
+                    100% {
+                        z-index: 9;
+                    }
+                }            
+        
+                @-moz-keyframes adFullWidthAn2 {
+                    0% {
+                        z-index: -1;
+                    }
+                    33.3333% {
+                        -moz-transform: translate(0, -250px);
+                        z-index: 10;
+                    }
+                    66.6666% {
+                        -moz-transform: translate(0, -500px);
+                        z-index: 10;
+                    }
+                    67% {
+                        z-index: -1;
+                    }
+                    100% {
+                        z-index: -1;
+                    }
+                }           
+                @-webkit-keyframes adFullWidthAn2 {
+                    0% {
+                        z-index: -1;
+                    }
+                    33.3333% {
+                        -webkit-transform: translate(0, -250px);
+                        z-index: 10;
+                    }
+                    66.6666% {
+                        -webkit-transform: translate(0, -500px);
+                        z-index: 10;
+                    }
+                    67% {
+                        z-index: -1;
+                    }
+                    100% {
+                        z-index: -1;
+                    }
                 }
-                100% {
-                    z-index: -1;
+                @-o-keyframes adFullWidthAn2 {
+                    0% {
+                        z-index: -1;
+                    }
+                    33.3333% {
+                        -o-transform: translate(0, -250px);
+                        z-index: 10;
+                    }
+                    66.6666% {
+                        -o-transform: translate(0, -500px);
+                        z-index: 10;
+                    }
+                    67% {
+                        z-index: -1;
+                    }
+                    100% {
+                        z-index: -1;
+                    }
                 }
-            }           
-            @-webkit-keyframes adFullWidthAn2 {
-                0% {
-                    z-index: -1;
+                @keyframes adFullWidthAn2 {
+                    0% {
+                        z-index: -1;
+                    }
+                    33.3333% {
+                        transform: translate(0, -250px);
+                        z-index: 10;
+                    }
+                    66.6666% {
+                        transform: translate(0, -500px);
+                        z-index: 10;
+                    }
+                    67% {
+                        z-index: -1;
+                    }
+                    100% {
+                        z-index: -1;
+                    }
                 }
-                33.3333% {
-                    -webkit-transform: translate(0, -250px);
-                    z-index: 10;
+                @-webkit-keyframes adFullWidthAn3 {
+                    0% {
+                        z-index: -1;
+                    }
+                    33.3333% {
+                        -webkit-transform: translate(0, -250px);
+                        z-index: 10;
+                    }
+                    100% {
+                        -webkit-transform: translate(0, -250px);
+                        z-index: 11;
+                    }
                 }
-                66.6666% {
-                    -webkit-transform: translate(0, -500px);
-                    z-index: 10;
+                @-moz-keyframes adFullWidthAn3 {
+                    0% {
+                        z-index: -1;
+                    }
+                    33.3333% {
+                        -moz-transform: translate(0, -250px);
+                        z-index: 10;
+                    }
+                    100% {
+                        -moz-transform: translate(0, -250px);
+                        z-index: 11;
+                    }
                 }
-                67% {
-                    z-index: -1;
+                @-o-keyframes adFullWidthAn3 {
+                    0% {
+                        z-index: -1;
+                    }
+                    33.3333% {
+                        -o-transform: translate(0, -250px);
+                        z-index: 10;
+                    }
+                    100% {
+                        -o-transform: translate(0, -250px);
+                        z-index: 11;
+                    }
                 }
-                100% {
-                    z-index: -1;
+                @keyframes adFullWidthAn3 {
+                    0% {
+                        z-index: -1;
+                    }
+                    33.3333% {
+                        transform: translate(0, -250px);
+                        z-index: 10;
+                    }
+                    100% {
+                        transform: translate(0, -250px);
+                        z-index: 11;
+                    }
                 }
-            }
-            @-o-keyframes adFullWidthAn2 {
-                0% {
-                    z-index: -1;
-                }
-                33.3333% {
-                    -o-transform: translate(0, -250px);
-                    z-index: 10;
-                }
-                66.6666% {
-                    -o-transform: translate(0, -500px);
-                    z-index: 10;
-                }
-                67% {
-                    z-index: -1;
-                }
-                100% {
-                    z-index: -1;
-                }
-            }
-            @keyframes adFullWidthAn2 {
-                0% {
-                    z-index: -1;
-                }
-                33.3333% {
-                    transform: translate(0, -250px);
-                    z-index: 10;
-                }
-                66.6666% {
-                    transform: translate(0, -500px);
-                    z-index: 10;
-                }
-                67% {
-                    z-index: -1;
-                }
-                100% {
-                    z-index: -1;
-                }
-            }
-            @-webkit-keyframes adFullWidthAn3 {
-                0% {
-                    z-index: -1;
-                }
-                33.3333% {
-                    -webkit-transform: translate(0, -250px);
-                    z-index: 10;
-                }
-                100% {
-                    -webkit-transform: translate(0, -250px);
-                    z-index: 11;
-                }
-            }
-            @-moz-keyframes adFullWidthAn3 {
-                0% {
-                    z-index: -1;
-                }
-                33.3333% {
-                    -moz-transform: translate(0, -250px);
-                    z-index: 10;
-                }
-                100% {
-                    -moz-transform: translate(0, -250px);
-                    z-index: 11;
-                }
-            }
-            @-o-keyframes adFullWidthAn3 {
-                0% {
-                    z-index: -1;
-                }
-                33.3333% {
-                    -o-transform: translate(0, -250px);
-                    z-index: 10;
-                }
-                100% {
-                    -o-transform: translate(0, -250px);
-                    z-index: 11;
-                }
-            }
-            @keyframes adFullWidthAn3 {
-                0% {
-                    z-index: -1;
-                }
-                33.3333% {
-                    transform: translate(0, -250px);
-                    z-index: 10;
-                }
-                100% {
-                    transform: translate(0, -250px);
-                    z-index: 11;
-                }
-            }
-        </style>
+            </style>
     </head>
     <body>
         <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
             <div class="facia-container__inner">Advertisement</div>
         </div>
-        <div class="adFullWidth__adBWrapper">
+        <div class="adFullWidth__adBWrapper adFullWidth__top animationGo">
             <a href="http://www.theguardian.com">
                 <div class="gs-container">
                     <div class="adFullWidth__adWrapper">
@@ -486,10 +478,8 @@
                             <div class="facia-container__inner">
                                 <div class="container__body">
                                     <div class="slide slide1">
-                                        <div class="adFullWidth__cta-small"></div>
                                     </div>
                                     <div class="slide slide2">
-                                        <div class="adFullWidth__cta-small"></div>
                                     </div>
                                      <div class="slide slide3">
                                         <div class="text_holder"></div>
@@ -508,7 +498,7 @@
         <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
             <div class="facia-container__inner">Advertisement</div>
         </div>
-        <div class="adFullWidth__adBWrapper">
+        <div class="adFullWidth__adBWrapper adFullWidth__mid animationGo">
             <a href="http://www.theguardian.com">
                 <div class="gs-container gs-border">
                     <div class="adFullWidth__adWrapper">
@@ -516,10 +506,8 @@
                             <div class="facia-container__inner">
                                 <div class="container__body">
                                     <div class="slide slide1">
-                                        <div class="adFullWidth__cta-small"></div>
                                     </div>
                                     <div class="slide slide2">
-                                        <div class="adFullWidth__cta-small"></div>
                                     </div>
                                     <div class="slide slide3">
                                         <div class="text_holder"></div>
@@ -539,7 +527,7 @@
         <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
             <div class="facia-container__inner">Advertisement</div>
         </div>
-        <div class="adFullWidth__adBWrapper">
+        <div class="adFullWidth__adBWrapper adFullWidth__bot animationGo">
             <a href="http://www.theguardian.com">
                 <div class="gs-container gs-border">
                     <div class="adFullWidth__adWrapper">
@@ -547,10 +535,8 @@
                             <div class="facia-container__inner">
                                 <div class="container__body">
                                     <div class="slide slide1">
-                                        <div class="adFullWidth__cta-small"></div>
                                     </div>
                                     <div class="slide slide2">
-                                        <div class="adFullWidth__cta-small"></div>
                                     </div>
                                     <div class="slide slide3">
                                         <div class="text_holder"></div>

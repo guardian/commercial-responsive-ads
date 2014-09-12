@@ -1,0 +1,405 @@
+<div class="breakout__html">
+<style type="text/css">
+        /* These are over-riding site styles USE WITH CAUTION */
+        .top-banner-ad-container--desktop,
+        .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+            display: block !important;
+            max-width: none !important;
+        }
+        .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+            width: 100% !important;
+            padding: 0 !important;
+            margin-left: 0 !important;
+        }
+        /* End of nasty hacks */
+        .ad-slot--top-above-nav .ad-slot__label {
+            display: none;
+        }
+        .top-banner-ad-container--facia-layout .ad-slot--top-banner-ad .ad-slot__label,
+        .ad-slot__label.adFullWidth__label {
+            width: auto;
+            display: block;
+            height: 18px;
+            border-top: 0;
+            text-align: left;
+        }
+        .adFullWidth__adBWrapper .container__body {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+            height: 250px;
+            position: relative;
+            padding-top: 0;
+        }  
+        .adFullWidth__adWrapper {
+            height: 250px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            box-sizing: $box;
+            position: relative;
+        }
+        .adFullWidth__adBWrapper {
+            background: white;
+            overflow: hidden;
+        }
+        .adFullWidth__adBWrapper .gs-border {
+            border: 1px solid #dcdcdc;
+            border-width: 1px 0;
+        }
+        .adFullWidth__subject {
+            position: absolute;
+            z-index: 20;
+            top: 0;
+            left: 10px;
+            width: 45px;
+            height: 55px;
+            background-image: url(%%FILE:PNG1%%);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+        }
+        .adFullWidth__cta {
+            background: url(%%FILE:PNG6%%) no-repeat 0 0;
+            position: absolute;
+            z-index: 20;
+            left: 10px;
+            bottom: 20px;
+            height: 30px;
+            width: 89px;
+        }
+        @media (max-width: 740px){
+            .adFullWidth__adWrapper .facia-container__inner {
+                -webkit-background-size: contain;
+                -moz-background-size: contain;
+                background-size: contain;
+            }
+        }
+        .adFullWidth__adWrapper .slide {
+            height: 250px;
+            width: 100%;
+            font-weight: bold;
+            text-align: center;
+            background-color: #fff;
+            font-size: 40px;
+            color: black;
+            position: relative;
+        }
+        .adFullWidth__adWrapper .slide1 {
+            background-image: url(%%FILE:PNG3%%);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+
+        .adFullWidth__adWrapper .slide2 {
+            background-image: url(%%FILE:PNG4%%);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+        .adFullWidth__adWrapper .slide3 {
+            height: 292px;
+        }
+        .adFullWidth__adWrapper .slide3 .text_holder {
+            background-image: url(%%FILE:PNG2%%);
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            position: absolute;
+            left: 110px;
+            top: 62px;
+            width: 379px;
+            height: 80px;
+        }
+        .adFullWidth__adWrapper .slide3 .car_holder {
+            height: 100%;
+            background: url(%%FILE:JPG1%%) no-repeat 100% 0;
+        }
+        .adFullWidth__adWrapper .adFullWidth__slide-holder {
+            height: 792px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            /*transform-origin*/
+            -webkit-transform-origin: top left;
+               -moz-transform-origin: top left;
+                -ms-transform-origin: top left;
+                 -o-transform-origin: top left;
+                    transform-origin: top left;
+            /*animation-duration*/
+            -webkit-animation-duration: 9s;
+               -moz-animation-duration: 9s;
+                -ms-animation-duration: 9s;
+                 -o-animation-duration: 9s;
+                    animation-duration: 9s;
+            /*animation-iteration-count*/
+            -webkit-animation-iteration-count: 1;
+               -moz-animation-iteration-count: 1;
+                -ms-animation-iteration-count: 1;
+                 -o-animation-iteration-count: 1;
+                    animation-iteration-count: 1;
+            /*animation-delay*/
+            -webkit-animation-delay: 1s;
+               -moz-animation-delay: 1s;
+                -ms-animation-delay: 1s;
+                 -o-animation-delay: 1s;
+                    animation-delay: 1s;  
+            -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+            animation-fill-mode: forwards;
+        }
+        .adFullWidth__top .adFullWidth__adWrapper .adFullWidth__slide-holder {
+            /*animation-name*/
+            -webkit-animation-name: adFullWidthAn;
+               -moz-animation-name: adFullWidthAn;
+                -ms-animation-name: adFullWidthAn;
+                 -o-animation-name: adFullWidthAn;
+                    animation-name: adFullWidthAn;
+            /*animation-delay*/
+            -webkit-animation-delay: 0s;
+               -moz-animation-delay: 0s;
+                -ms-animation-delay: 0s;
+                 -o-animation-delay: 0s;
+                    animation-delay: 0s;            
+        }
+        .adFullWidth__mid.animationGo .adFullWidth__adWrapper .adFullWidth__slide-holder,
+        .adFullWidth__bot.animationGo .adFullWidth__adWrapper .adFullWidth__slide-holder {
+            /*animation-name*/
+            -webkit-animation-name: adFullWidthAn;
+               -moz-animation-name: adFullWidthAn;
+                -ms-animation-name: adFullWidthAn;
+                 -o-animation-name: adFullWidthAn;
+                    animation-name: adFullWidthAn;
+            /*animation-delay*/
+            -webkit-animation-delay: 1s;
+               -moz-animation-delay: 1s;
+                -ms-animation-delay: 1s;
+                 -o-animation-delay: 1s;
+                    animation-delay: 1s;
+            }
+        @media (min-width: 741px){
+            .adFullWidth__subject {
+                top: 0;
+                left: 10px;
+                width: 89px;
+                height: 110px;
+                background-image: url(%%FILE:PNG1%%);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+            }
+            .adFullWidth__adWrapper,
+            .adFullWidth__adBWrapper .container__body {
+                background-color: #fff;
+            }
+            .adFullWidth__adWrapper .slide1, .adFullWidth__adWrapper .slide2 {
+                background-size: 80%;
+            }
+            .adFullWidth__adWrapper .slide3 {
+                 left: 0;
+            }
+        }
+        @media (min-width: 981px){
+            .adFullWidth__adWrapper .slide {
+                width: 100%;
+            }
+            .adFullWidth__adWrapper .slide1, .adFullWidth__adWrapper .slide2 {
+                background-size: auto;
+                left: 0;
+                height: 250px;
+            }
+        }
+        @-moz-keyframes adFullWidthAn {
+            33% {
+                -moz-transform: translate(0, -250px);
+            }
+            66% {
+                -moz-transform: translate(0, -542px);
+            }
+            100% {
+                -moz-transform: translate(0, -542px);
+            }
+        } 
+        @-webkit-keyframes adFullWidthAn {
+            33% {
+                -webkit-transform: translate(0, -250px);
+            }
+            66% {
+                -webkit-transform: translate(0, -542px);
+            }
+            100% {
+                -webkit-transform: translate(0, -542px);
+            }
+        } 
+        @-o-keyframes adFullWidthAn {
+            33% {
+                -o-transform: translate(0, -250px);
+            }
+            66% {
+                -o-transform: translate(0, -542px);
+            }
+            100% {
+                -o-transform: translate(0, -542px);
+            }
+        }
+        @keyframes adFullWidthAn {
+            33% {
+                transform: translate(0, -250px);
+            }
+            66% {
+                transform: translate(0, -542px);
+            }
+            100% {
+                transform: translate(0, -542px);
+            }
+        }         
+    </style>
+    <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
+        <div class="facia-container__inner">Advertisement</div>
+        <IMG SRC="http://ad.doubleclick.net/ad/N3340.1818860THEGUARDIAN.COMUS/B8166578.110853431;sz=1x1"/>
+    </div>
+    <div class="adFullWidth__adBWrapper adFullWidth__top ad--responsive">
+        <a href="%%DEST_URL%%">
+           <div class="gs-container">
+                <div class="adFullWidth__adWrapper">
+                    <div class="facia-container--layout-front">
+                        <div class="facia-container__inner">
+                            <div class="container__body">
+                                <div class="adFullWidth__slide-holder">
+                                    <div class="slide slide1"></div>
+                                    <div class="slide slide2"></div>
+                                     <div class="slide slide3">
+                                        <div class="text_holder"></div>
+                                        <div class="car_holder"></div>
+                                    </div>
+                                </div>
+                                <div class="adFullWidth__cta"></div>
+                                <div class="adFullWidth__subject"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="breakout__html">
+    <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
+        <div class="facia-container__inner">Advertisement</div>
+    </div>
+    <div class="adFullWidth__adBWrapper adFullWidth__mid">
+        <a href="%%DEST_URL%%">
+            <div class="gs-container gs-border">
+                <div class="adFullWidth__adWrapper">
+                    <div class="facia-container--layout-front">
+                        <div class="facia-container__inner">
+                            <div class="container__body">
+                                <div class="adFullWidth__slide-holder">
+                                    <div class="slide slide1"></div>
+                                    <div class="slide slide2"></div>
+                                     <div class="slide slide3">
+                                        <div class="text_holder"></div>
+                                        <div class="car_holder"></div>
+                                    </div>
+                                </div>
+                                <div class="adFullWidth__cta"></div>
+                                <div class="adFullWidth__subject"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="ad-slot__label adFullWidth__label"></div>
+</div>
+<script type="text/javascript" class="breakout__script">
+    (function () {
+        if (typeof require === 'function') {
+            require([
+                'bean',
+                'bonzo',
+                'qwery',
+                'common/utils/$',
+                'common/utils/mediator'
+            ], function (
+                bean,
+                bonzo,
+                qwery,
+                $,
+                mediator
+            ) {
+                var $adContainerBot = $('#dfp-ad--merchandising-high .adFullWidth__adBWrapper'),
+                    listener = function () {
+                        if ((window.pageYOffset + bonzo.viewport().height) > ($adContainerBot.offset().top)) {
+                            $adContainerBot.addClass('animationGo');
+                            mediator.off('window:scroll', listener);
+                        }
+                    };
+                mediator.on('window:scroll', listener);
+            });
+        }
+    })();
+</script>
+
+
+<div class="breakout__html">
+    <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
+        <div class="facia-container__inner">Advertisement</div>
+    </div>
+    <div class="adFullWidth__adBWrapper adFullWidth__bot">
+        <a href="%%DEST_URL%%">
+            <div class="gs-container gs-border">
+                <div class="adFullWidth__adWrapper">
+                    <div class="facia-container--layout-front">
+                        <div class="facia-container__inner">
+                            <div class="container__body">
+                                <div class="adFullWidth__slide-holder">
+                                    <div class="slide slide1"></div>
+                                    <div class="slide slide2"></div>
+                                     <div class="slide slide3">
+                                        <div class="text_holder"></div>
+                                        <div class="car_holder"></div>
+                                    </div>
+                                </div>
+                                <div class="adFullWidth__cta"></div>
+                                <div class="adFullWidth__subject"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="ad-slot__label adFullWidth__label"></div>
+</div>
+<script type="text/javascript" class="breakout__script">
+    (function () {
+        if (typeof require === 'function') {
+            require([
+                'bean',
+                'bonzo',
+                'qwery',
+                'common/utils/$',
+                'common/utils/mediator'
+            ], function (
+                bean,
+                bonzo,
+                qwery,
+                $,
+                mediator
+            ) {
+                var $adContainerBot = $('#dfp-ad--merchandising .adFullWidth__adBWrapper'),
+                    listener = function () {
+                        if ((window.pageYOffset + bonzo.viewport().height) > ($adContainerBot.offset().top)) {
+                            $adContainerBot.addClass('animationGo');
+                            mediator.off('window:scroll', listener);
+                        }
+                    };
+                mediator.on('window:scroll', listener);
+            });
+        }
+    })();
+</script>
