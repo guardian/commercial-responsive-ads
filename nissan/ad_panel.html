@@ -72,8 +72,8 @@
                     z-index: 20;
                     top: 0;
                     left: 10px;
-                    width: 45px;
-                    height: 55px;
+                    width: 89px;
+                    height: 110px;
                     background-image: url(images/nissan_logo.png);
                     background-repeat: no-repeat;
                     background-position: 0 0;
@@ -116,7 +116,10 @@
                 .adFullWidth__adWrapper .slide2 {
                     background-image: url(images/nissan_most_proven.png);
                     background-repeat: no-repeat;
-                    background-position: 50% 50%;
+                }
+                .adFullWidth__adWrapper .slide1,
+                .adFullWidth__adWrapper .slide2 {
+                    background-position: 75% 50%;                    
                 }
                 .adFullWidth__adWrapper .slide3 {
                     height: 292px;
@@ -124,9 +127,9 @@
                 .adFullWidth__adWrapper .slide3 .text_holder {
                     background-image: url(images/nissan_100percent.png);
                     background-repeat: no-repeat;
-                    -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                    background-size: cover;
+                    -webkit-background-size: 90%;
+                    -moz-background-size: 90%;
+                    background-size: 90%;
                     position: absolute;
                     left: 110px;
                     top: 62px;
@@ -185,15 +188,6 @@
                             animation-delay: 1s;
                     }
                 @media (min-width: 741px){
-                    .adFullWidth__subject {
-                        top: 0;
-                        left: 10px;
-                        width: 89px;
-                        height: 110px;
-                        background-image: url(images/nissan_logo.png);
-                        background-repeat: no-repeat;
-                        background-position: 0 0;
-                    }
                     .adFullWidth__adWrapper,
                     .adFullWidth__adBWrapper .container__body {
                         height: 250px;
@@ -208,16 +202,23 @@
                     }
                 }
                 @media (min-width: 981px){
+                    .adFullWidth__adWrapper .slide3 .text_holder {
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        background-size: cover;
+                    }
                     .adFullWidth__adWrapper .slide {
                         width: 100%;
                     }
-                    .adFullWidth__adWrapper .slide1, .adFullWidth__adWrapper .slide2 {
+                    .adFullWidth__adWrapper .slide1,
+                    .adFullWidth__adWrapper .slide2 {
+                        background-position: 50% 50%; 
                         background-size: auto;
                         left: 0;
                         height: 250px;
                     }
                 }
-                @-moz-keyframes adFullWidthAn {
+/*                @-moz-keyframes adFullWidthAn {
                     33% {
                         -moz-transform: translate(0, -250px);
                     }
@@ -260,7 +261,8 @@
                     100% {
                         transform: translate(0, -542px);
                     }
-                }        
+                }
+                */ 
             </style>
     </head>
     <body>
