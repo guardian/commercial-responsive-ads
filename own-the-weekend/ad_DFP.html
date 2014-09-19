@@ -1,0 +1,426 @@
+<div class="breakout__html">
+    <style type="text/css">
+        /* These are over-riding site styles USE WITH CAUTION */
+        .top-banner-ad-container--desktop,
+        .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+            display: block !important;
+            max-width: none !important;
+        }
+        .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+            width: 100% !important;
+            padding: 0 !important;
+            margin-left: 0 !important;
+        }
+        /* End of nasty hacks */
+        .ad-slot--top-above-nav .ad-slot__label {
+            display: none;
+        }
+        .top-banner-ad-container--facia-layout .ad-slot--top-banner-ad .ad-slot__label,
+        .ad-slot__label.adFullWidth__label {
+            width: auto;
+            display: block;
+            height: 18px;
+            border-top: 0;
+            text-align: left;
+        }
+        .has-page-skin .adFullWidth__adWrapper .facia-container--layout-front {
+            width: auto;
+            background-color: transparent;
+        }
+        .adFullWidth__adBWrapper .container__body {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+            height: 100px;
+            position: relative;
+            padding-top: 0;
+        }  
+        .adFullWidth__adWrapper {
+            height: 100px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            box-sizing: $box;
+            position: relative;
+        }
+        .adFullWidth__adBWrapper {
+            background: white;
+            overflow: hidden;
+            position: relative;
+        }
+        .adFullWidth__adBWrapper .gs-border {
+            border: 1px solid #dcdcdc;
+            border-width: 1px 0;
+        }                
+        @media (min-width: 741px){
+            .adFullWidth__adWrapper,
+            .adFullWidth__adBWrapper .container__body {
+                height: 250px;
+            }
+            .adFullWidth__adBWrapper {
+                background-image: url(%%FILE:JPG1%%);
+                background-position: 40% 0;
+                background-repeat: repeat-x;
+            }
+
+            .adFullWidth__adBWrapper .adFullWidth__left,
+            .adFullWidth__adBWrapper .adFullWidth__front__left,
+            .adFullWidth__adBWrapper .adFullWidth__right,
+            .adFullWidth__adBWrapper .adFullWidth__front__right,
+            .adFullWidth__adBWrapper .adFullWidth__front__middle,
+            .adFullWidth__adBWrapper .adFullWidth__owntheweekend,
+            .adFullWidth__adBWrapper .adFullWidth__baloon,
+            .adFullWidth__adBWrapper .adFullWidth__plane,
+            .adFullWidth__adBWrapper .adFullWidth__guardianObserver,
+            .adFullWidth__adBWrapper .adFullWidth__papers {
+                -webkit-animation-iteration-count: 1;
+                   -moz-animation-iteration-count: 1;
+                    -ms-animation-iteration-count: 1;
+                     -o-animation-iteration-count: 1;
+                        animation-iteration-count: 1;
+                -webkit-animation-delay: 0s;
+                   -moz-animation-delay: 0s;
+                    -ms-animation-delay: 0s;
+                     -o-animation-delay: 0s;
+                        animation-delay: 0s;  
+                -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+                animation-fill-mode: forwards;                     
+            }
+            .animationGo.adFullWidth__adBWrapper .adFullWidth__left,
+            .animationGo.adFullWidth__adBWrapper .adFullWidth__front__left {
+                -webkit-transform-origin: top left;
+                   -moz-transform-origin: top left;
+                    -ms-transform-origin: top left;
+                     -o-transform-origin: top left;
+                        transform-origin: top left;
+                -webkit-animation-name: adFrontLeft;
+                   -moz-animation-name: adFrontLeft;
+                    -ms-animation-name: adFrontLeft;
+                     -o-animation-name: adFrontLeft;
+                        animation-name: adFrontLeft;
+            }
+            .animationGo.adFullWidth__adBWrapper .adFullWidth__right,
+            .animationGo.adFullWidth__adBWrapper .adFullWidth__front__right {
+                -webkit-transform-origin: top right;
+                   -moz-transform-origin: top right;
+                    -ms-transform-origin: top right;
+                     -o-transform-origin: top right;
+                        transform-origin: top right;
+                -webkit-animation-name: adFrontRight;
+                   -moz-animation-name: adFrontRight;
+                    -ms-animation-name: adFrontRight;
+                     -o-animation-name: adFrontRight;
+                        animation-name: adFrontRight;
+            }
+            .animationGo.adFullWidth__adBWrapper .adFullWidth__front__middle,
+            .animationGo.adFullWidth__adBWrapper .adFullWidth__baloon,
+            .animationGo.adFullWidth__adBWrapper .adFullWidth__guardianObserver,
+            .animationGo.adFullWidth__adBWrapper .adFullWidth__papers {
+                -webkit-transform-origin: top left;
+                   -moz-transform-origin: top left;
+                    -ms-transform-origin: top left;
+                     -o-transform-origin: top left;
+                        transform-origin: top left;
+                -webkit-animation-name: adFrontMiddle;
+                   -moz-animation-name: adFrontMiddle;
+                    -ms-animation-name: adFrontMiddle;
+                     -o-animation-name: adFrontMiddle;
+                        animation-name: adFrontMiddle;
+            }
+            .adFullWidth__adBWrapper .adFullWidth__left {
+                background-image: url(%%FILE:PNG1%%);
+                background-position: 0 100%;
+                background-repeat: no-repeat;
+                height: 250px;
+                position: absolute;
+                width: 413px;
+                height: 233px;
+                left: -413px;
+                bottom: 0;
+                -webkit-animation-duration: 9s;
+                   -moz-animation-duration: 9s;
+                    -ms-animation-duration: 9s;
+                     -o-animation-duration: 9s;
+                        animation-duration: 9s;
+            }
+            .adFullWidth__adBWrapper .adFullWidth__right {
+                background-image: url(%%FILE:PNG2%%);
+                background-position: 100% 0;
+                background-repeat: no-repeat;
+                height: 250px;
+                width: 789px;
+                position: absolute;
+                right: -789px;
+                -webkit-animation-duration: 9s;
+                   -moz-animation-duration: 9s;
+                    -ms-animation-duration: 9s;
+                     -o-animation-duration: 9s;
+                        animation-duration: 9s;
+            }
+           .adFullWidth__adBWrapper .adFullWidth__owntheweekend {
+                position: absolute;
+                background-image: url(%%FILE:PNG3%%);
+                background-position: 50% 40%;
+                background-repeat: no-repeat;
+                height: 250px;
+                width: 100%;
+                top: -250px ;
+                -webkit-animation-duration: 9s;
+                   -moz-animation-duration: 9s;
+                    -ms-animation-duration: 9s;
+                     -o-animation-duration: 9s;
+                        animation-duration: 9s;
+                -webkit-transform-origin: top left;
+                   -moz-transform-origin: top left;
+                    -ms-transform-origin: top left;
+                     -o-transform-origin: top left;
+                        transform-origin: top left;
+            }
+            .animationGo.adFullWidth__adBWrapper .adFullWidth__owntheweekend,
+            .adFullWidth__adBWrapper .adFullWidth__guardianObserver {
+                -webkit-animation-name: adFrontMiddleT;
+                   -moz-animation-name: adFrontMiddleT;
+                    -ms-animation-name: adFrontMiddleT;
+                     -o-animation-name: adFrontMiddleT;
+                        animation-name: adFrontMiddleT;
+            }
+            .adFullWidth__adBWrapper .adFullWidth__front__left {
+                background-image: url(%%FILE:PNG4%%);
+                background-position: 0 100%;
+                position: absolute;
+                width: 137px;
+                height: 175px;
+                left: -413px;
+                bottom: 0;
+                background-repeat: no-repeat;
+                -webkit-animation-duration: 6s;
+                   -moz-animation-duration: 6s;
+                    -ms-animation-duration: 6s;
+                     -o-animation-duration: 6s;
+                        animation-duration: 6s;             
+            }
+            .adFullWidth__adBWrapper .adFullWidth__front__right {
+                background-image: url(%%FILE:PNG6%%);
+                background-position: 100% 100%;
+                background-repeat: no-repeat;
+                height: 250px;
+                width: 789px;
+                position: absolute;
+                top: 0;
+                right: -789px;
+                -webkit-animation-duration: 6s;
+                   -moz-animation-duration: 6s;
+                    -ms-animation-duration: 6s;
+                     -o-animation-duration: 6s;
+                        animation-duration: 6s;
+            }
+            .adFullWidth__adBWrapper .adFullWidth__front__middle,
+            .adFullWidth__adBWrapper .adFullWidth__guardianObserver {
+                background-image: url(%%FILE:PNG5%%);
+                background-position: 80% 100%;
+                background-repeat: repeat-x;
+                position: absolute;
+                width: 100%;
+                height: 250px;
+                top: 250px;
+                -webkit-animation-duration: 9s;
+                   -moz-animation-duration: 9s;
+                    -ms-animation-duration: 9s;
+                     -o-animation-duration: 9s;
+                        animation-duration: 9s;
+            }
+            .adFullWidth__adBWrapper .adFullWidth__guardianObserver {
+                background-image: url(%%FILE:PNG9%%);
+                background-position: 50% 90%;
+                background-repeat: no-repeat;
+                z-index: 1;
+            }
+            .adFullWidth__adBWrapper .adFullWidth__papers {
+                position: absolute;
+                width: 260px;
+                height: 160px;
+                background: url(%%FILE:PNG10%%) no-repeat;
+                top: 250px;
+                right: 0;
+                -webkit-animation-duration: 6s;
+                   -moz-animation-duration: 6s;
+                    -ms-animation-duration: 6s;
+                     -o-animation-duration: 6s;
+                        animation-duration: 6s;
+                -webkit-animation-delay: 3s;
+                   -moz-animation-delay: 3s;
+                    -ms-animation-delay: 3s;
+                     -o-animation-delay: 3s;
+                        animation-delay: 3s;
+            }
+            .adFullWidth__adBWrapper .adFullWidth__baloon {
+                width: 113px;
+                height: 111px;
+                background: url(%%FILE:PNG7%%) no-repeat;
+                position: absolute;
+                top: 255px;
+                left: 10%;
+                -webkit-animation-duration: 9s;
+                   -moz-animation-duration: 9s;
+                    -ms-animation-duration: 9s;
+                     -o-animation-duration: 9s;
+                        animation-duration: 9s;
+                -webkit-animation-delay: 3s;
+                   -moz-animation-delay: 3s;
+                    -ms-animation-delay: 3s;
+                     -o-animation-delay: 3s;
+                        animation-delay: 3s; 
+            }
+             .adFullWidth__adBWrapper .adFullWidth__plane {
+                width: 182px;
+                height: 47px;
+                background: url(%%FILE:PNG8%%) no-repeat;
+                position: absolute;
+                top: 60%;
+                left: -182px;
+                -webkit-animation-duration: 6s;
+                   -moz-animation-duration: 6s;
+                    -ms-animation-duration: 6s;
+                     -o-animation-duration: 6s;
+                        animation-duration: 6s;
+                -webkit-animation-delay: 3s;
+                   -moz-animation-delay: 3s;
+                    -ms-animation-delay: 3s;
+                     -o-animation-delay: 3s;
+                        animation-delay: 3s;
+                }
+                .animationGo.adFullWidth__adBWrapper .adFullWidth__plane{
+                -webkit-animation-name: adFrontPlane;
+                   -moz-animation-name: adFrontPlane;
+                    -ms-animation-name: adFrontPlane;
+                     -o-animation-name: adFrontPlane;
+                        animation-name: adFrontPlane;
+            }
+            @-moz-keyframes adFrontLeft {
+                100% {
+                    -moz-transform: translate(413px, 0);
+                }
+             } 
+            @-webkit-keyframes adFrontLeft {
+                100% {
+                    -webkit-transform: translate(413px, 0);
+                }
+            } 
+            @-o-keyframes adFrontLeft {
+                100% {
+                    -o-transform: translate(413px, 0);
+                }
+            }
+            @keyframes adFrontLeft {
+                100% {
+                    transform: translate(413px, 0);
+                }
+            }
+            
+            @-moz-keyframes adFrontRight {
+                100% {
+                    -moz-transform: translate(-789px, 0);
+                }
+             } 
+            @-webkit-keyframes adFrontRight {
+                100% {
+                    -webkit-transform: translate(-789px, 0);
+                }
+            } 
+            @-o-keyframes adFrontRight {
+                100% {
+                    -o-transform: translate(-789px, 0);
+                }
+            }
+            @keyframes adFrontRight {
+                100% {
+                    transform: translate(-789px, 0);
+                }
+            }
+
+            @-moz-keyframes adFrontMiddle {
+                100% {
+                    -moz-transform: translate(0, -250px);
+                }
+             } 
+            @-webkit-keyframes adFrontMiddle {
+                100% {
+                    -webkit-transform: translate(0, -250px);
+                }
+            } 
+            @-o-keyframes adFrontMiddle {
+                100% {
+                    -o-transform: translate(0, -250px);
+                }
+            }
+            @keyframes adFrontMiddle {
+                100% {
+                    transform: translate(0, -250px);
+                }
+            }
+
+            @-moz-keyframes adFrontMiddleT {
+                100% {
+                    -moz-transform: translate(0, 250px);
+                }
+             } 
+            @-webkit-keyframes adFrontMiddleT {
+                100% {
+                    -webkit-transform: translate(0, 250px);
+                }
+            } 
+            @-o-keyframes adFrontMiddleT {
+                100% {
+                    -o-transform: translate(0, 250px);
+                }
+            }
+            @keyframes adFrontMiddleT {
+                100% {
+                    transform: translate(0, 250px);
+                }
+            }
+            
+            @-moz-keyframes adFrontPlane {
+                100% {
+                    -moz-transform: translate(800%, -200%);
+                }
+             } 
+            @-webkit-keyframes adFrontPlane {
+                100% {
+                    -webkit-transform: translate(800%, -200%);
+                }
+            } 
+            @-o-keyframes adFrontPlane {
+                100% {
+                    -o-transform: translate(800%, -200%);
+                }
+            }
+            @keyframes adFrontPlane {
+                100% {
+                    transform: translate(800%, -200%);
+                }
+            }
+        }
+    </style>
+    <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
+        <div class="facia-container__inner">Advertisement</div>
+    </div>
+    <div class="adFullWidth__adBWrapper adFullWidth__top animationGo">
+        <a href="http://www.theguardian.com">
+            <div class="adFullWidth__left"></div>
+            <div class="adFullWidth__right"></div>
+            <div class="adFullWidth__adWrapper">
+                <div class="adFullWidth__owntheweekend"></div>
+                <div class="adFullWidth__guardianObserver"></div>
+                <div class="adFullWidth__baloon"></div>
+                <div class="adFullWidth__plane"></div>
+                <div class="adFullWidth__papers"></div>
+                <div class="facia-container--layout-front">
+                    <div class="adFullWidth__front__middle"></div>
+                    <div class="adFullWidth__front__left"></div>
+                    <div class="adFullWidth__front__right"></div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
