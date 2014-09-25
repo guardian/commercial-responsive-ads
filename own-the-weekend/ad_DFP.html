@@ -164,7 +164,8 @@
                 background-repeat: no-repeat;
                 height: 250px;
                 width: 100%;
-                top: -250px ;
+                top: -250px;
+                background-size: 75%;
                 -webkit-animation-duration: 9s;
                    -moz-animation-duration: 9s;
                     -ms-animation-duration: 9s;
@@ -175,6 +176,11 @@
                     -ms-transform-origin: top left;
                      -o-transform-origin: top left;
                         transform-origin: top left;
+            }
+            @media (min-width: 981px){
+                .adFullWidth__adBWrapper .adFullWidth__owntheweekend {
+                    background-size: auto;
+                }
             }
             .animationGo.adFullWidth__adBWrapper .adFullWidth__owntheweekend,
             .adFullWidth__adBWrapper .adFullWidth__guardianObserver {
@@ -241,7 +247,7 @@
                 height: 160px;
                 background: url(%%FILE:PNG10%%) no-repeat;
                 top: 250px;
-                right: 0;
+                right: 70px;
                 -webkit-animation-duration: 6s;
                    -moz-animation-duration: 6s;
                     -ms-animation-duration: 6s;
@@ -252,6 +258,15 @@
                     -ms-animation-delay: 3s;
                      -o-animation-delay: 3s;
                         animation-delay: 3s;
+            }
+            .adFullWidth__adBWrapper .adFullWidth__corner {
+                position: absolute;
+                width: 249px;
+                height: 1149px;
+                background: url(%%FILE:PNG11%%) no-repeat;
+                background-position: top right;
+                top: 0;
+                right: 0;                    
             }
             .adFullWidth__adBWrapper .adFullWidth__baloon {
                 width: 113px;
@@ -278,16 +293,21 @@
                 position: absolute;
                 top: 60%;
                 left: -182px;
-                -webkit-animation-duration: 6s;
-                   -moz-animation-duration: 6s;
-                    -ms-animation-duration: 6s;
-                     -o-animation-duration: 6s;
-                        animation-duration: 6s;
-                -webkit-animation-delay: 3s;
-                   -moz-animation-delay: 3s;
-                    -ms-animation-delay: 3s;
-                     -o-animation-delay: 3s;
-                        animation-delay: 3s;
+                -webkit-animation-duration: 8s;
+                   -moz-animation-duration: 8s;
+                    -ms-animation-duration: 8s;
+                     -o-animation-duration: 8s;
+                        animation-duration: 8s;
+                -webkit-animation-delay: 2s;
+                   -moz-animation-delay: 2s;
+                    -ms-animation-delay: 2s;
+                     -o-animation-delay: 2s;
+                        animation-delay: 2s;
+                -webkit-animation-timing-function: ease-in;
+                   -moz-animation-timing-function: ease-in;
+                    -ms-animation-timing-function: ease-in;
+                     -o-animation-timing-function: ease-in;
+                        animation-timing-function: ease-in;
                 }
                 .animationGo.adFullWidth__adBWrapper .adFullWidth__plane{
                 -webkit-animation-name: adFrontPlane;
@@ -382,22 +402,22 @@
             
             @-moz-keyframes adFrontPlane {
                 100% {
-                    -moz-transform: translate(800%, -200%);
+                    -moz-transform: translate(1200%, -400%);
                 }
              } 
             @-webkit-keyframes adFrontPlane {
                 100% {
-                    -webkit-transform: translate(800%, -200%);
+                    -webkit-transform: translate(1200%, -400%);
                 }
             } 
             @-o-keyframes adFrontPlane {
                 100% {
-                    -o-transform: translate(800%, -200%);
+                    -o-transform: translate(1200%, -400%);
                 }
             }
             @keyframes adFrontPlane {
                 100% {
-                    transform: translate(800%, -200%);
+                    transform: translate(1200%, -400%);
                 }
             }
         }
@@ -406,7 +426,7 @@
         <div class="facia-container__inner">Advertisement</div>
     </div>
     <div class="adFullWidth__adBWrapper adFullWidth__top animationGo">
-        <a href="http://www.theguardian.com">
+        <a href="http://www.theguardian.com/owntheweekend?INTCMP=dis_233886">
             <div class="adFullWidth__left"></div>
             <div class="adFullWidth__right"></div>
             <div class="adFullWidth__adWrapper">
@@ -414,7 +434,9 @@
                 <div class="adFullWidth__guardianObserver"></div>
                 <div class="adFullWidth__baloon"></div>
                 <div class="adFullWidth__plane"></div>
+                <div class="adFullWidth__corner"></div>
                 <div class="adFullWidth__papers"></div>
+                
                 <div class="facia-container--layout-front">
                     <div class="adFullWidth__front__middle"></div>
                     <div class="adFullWidth__front__left"></div>
