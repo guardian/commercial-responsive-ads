@@ -1,0 +1,99 @@
+<div class="breakout__html">
+    <style type="text/css">
+        /* These are over-riding site styles USE WITH CAUTION */
+        .top-banner-ad-container--desktop,
+        .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+            display: block !important;
+            max-width: none !important;
+        }
+        .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+            width: 100% !important;
+            padding: 0 !important;
+            margin-left: 0 !important;
+        }
+        /* End of nasty hacks */
+        .ad-slot--top-above-nav .ad-slot__label {
+            display: none;
+        }
+        .top-banner-ad-container--facia-layout .ad-slot--top-banner-ad .ad-slot__label,
+        .ad-slot__label.adFullWidth__label {
+            width: auto;
+            display: block;
+            height: 18px;
+            border-top: 0;
+            text-align: left;
+        }
+        @media (max-width: 1140px){
+            .adFullWidth__adBWrapper .gs-container {
+                max-width: none;
+            }
+        }
+        .adFullWidth__adBWrapper .container__body {
+            height: 100px;
+            position: relative;
+            padding-top: 0;
+        }
+        .adFullWidth__adWrapper {
+            height: 100px;
+            box-sizing: border-box;
+            position: relative;
+            background-image: url(%%FILE:JPG3%%);
+            background-repeat: no-repeat;
+            background-position: top right;
+
+        }
+        .adFullWidth__adBWrapper {
+            background: url(%%FILE:JPG2%%) repeat-x top left;
+        }
+        .adFullWidth__bg-left {
+            width: 50%;
+            height: 250px;
+            position: absolute;
+            background: url(%%FILE:JPG1%%) repeat-x top left;
+        }
+        .adFullWidth__subject {
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            background: url(%%FILE:PNG1%%) no-repeat bottom left;
+            background-size: contain;
+            width: 316px;
+            height: 250px;
+        }
+        @media (min-width: 741px){
+            .adFullWidth__adWrapper {
+                background-size: auto;
+            } 
+            .adFullWidth__adWrapper,
+            .adFullWidth__adBWrapper .container__body {
+                height: 250px;
+            }
+        }
+        @media (min-width: 1141px){
+            .adFullWidth__adWrapper {
+                background-position: top center;
+            }
+            
+        }
+    </style>
+    <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
+        <div class="facia-container__inner">Advertisement</div>
+    </div>
+    <div class="adFullWidth__adBWrapper">
+        <div class="adFullWidth__bg-left"></div>
+            <a href="%%DEST_URL%%%%CLICK_URL_UNESC%%">
+            <div class="gs-container">
+                <div class="adFullWidth__adWrapper">
+                    <div class="facia-container--layout-front">
+                        <div class="facia-container__inner">
+                            <div class="container__body">
+                                <div class="adFullWidth__cta"></div>
+                                <div class="adFullWidth__subject"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

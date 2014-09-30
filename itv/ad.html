@@ -8,7 +8,11 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="HandheldFriendly" content="True" />
         <style type="text/css">
-        
+            @media (max-width: 1140px){
+                .adFullWidth__adBWrapper .gs-container {
+                    max-width: none;
+                }
+            }
             /* Temp, needed for local testing only */
             .gs-container {
                 max-width: 1300px;
@@ -42,41 +46,50 @@
                 position: relative;
                 padding-top: 0;
             }  
+            /*
             .adFullWidth__adWrapper .facia-container__inner {
-                background-image: url(images/unileverS.png);
-                background-repeat: no-repeat;
+                background-image: url(); *//* uniLeverS */
+/*                background-repeat: no-repeat;
                 background-position: 95% 2px;
             }
+            */
             .adFullWidth__adWrapper {
                 height: 100px;
                 box-sizing: border-box;
                 background-repeat: no-repeat;
                 background-position: top left;
                 position: relative;
-                background: url(images/girl.png) no-repeat 66% 0;
-                background-size: 200px;
+                background-image: url(images/grantchester-bg.jpg);
+                background-repeat: no-repeat;
+                background-position: top right;
+
             }
             .adFullWidth__adBWrapper {
-                background: url(images/panelBG.jpg) repeat-x 12% 0;
+                background: url(images/bg-right.jpg) repeat-x top left;
+            }
+            .adFullWidth__bg-left {
+                width: 50%;
+                height: 250px;
+                position: absolute;
+                background: url(images/bg-left.jpg) repeat-x top left;
             }
             .adFullWidth__subject {
                 position: absolute;
                 bottom: 5px;
-                left: 5%;
-                background: url(images/Live-Better-logos_4_heart.png) no-repeat bottom left;
+                left: 0;
+                background: url(images/itv.png) no-repeat bottom left;
                 background-size: contain;
-                width: 50%;
-                height: 50px;
-                max-width: 300px;
+                width: 316px;
+                height: 250px;
             }
-            .adFullWidth__cta {
-                background: url(images/wiseWay.png) no-repeat 0 50%;
+/*            .adFullWidth__cta {
+                background: url(images/Skoda_Logo.png) no-repeat 0 50%;
                 background-size: contain;
                 position: absolute;
-                top: 0;
-                left: 5%;
-                width: 45%;
-                height: 60px;
+                bottom: 20px;
+                right: 0;
+                width: 63px;
+                height: 75px;
             }
             
             @media (min-width: 481px){
@@ -90,24 +103,26 @@
                     background-size: contain;
                 }
             }
-
+*/
             @media (min-width: 741px){
                 .adFullWidth__adWrapper {
                     background-size: auto;
                 }
-                .adFullWidth__subject {
+/*                .adFullWidth__subject {
                     bottom: 25px;
                     left: 10%;
                     width: 60%;
                     height: 68px;
                 }
+*/  
                 .adFullWidth__adWrapper,
                 .adFullWidth__adBWrapper .container__body {
                     height: 250px;
                 }
+                /*
                 .adFullWidth__adWrapper .facia-container__inner {
-                    background-image: url(images/unilever200.png);
-                    background-repeat: no-repeat;
+                    background-image: url(); /* unilever 200 */
+/*                    background-repeat: no-repeat;
                     background-position: 95% 2px;
                 }
                 .adFullWidth__cta {
@@ -116,7 +131,14 @@
                     height: 130px;
                     width: 45%;
                 }
+*/
             }
+            @media (min-width: 1141px){
+                .adFullWidth__adWrapper {
+                    background-position: top center;
+                }
+            }
+
         </style>
     </head>
     <body>
@@ -124,6 +146,7 @@
             <div class="facia-container__inner">Advertisement</div>
         </div>
         <div class="adFullWidth__adBWrapper">
+            <div class="adFullWidth__bg-left"></div>
             <a href="htp://www.theguardian.com">
                 <div class="gs-container">
                     <div class="adFullWidth__adWrapper">
