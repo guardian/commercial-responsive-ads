@@ -1,0 +1,54 @@
+<div class="breakout__html">
+    <style>
+        #dfp-ad--right .ad-slot__label {
+            background-color: #f6f6f6;
+        }
+        #dfp-ad--right .ad-test--mpu--transparent {
+            width: 300px;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #dfdfdf;
+        }
+        #dfp-ad--right .ad-test--mpu__image {
+            position: absolute;
+            z-index: 0;
+            width: 300px;
+            background: url(%%FILE:JPG1%%) 0 0 repeat-y
+        }
+    </style>
+    <a href="%%CLICK_URL_UNESC%%%%DEST_URL%%">
+        <div class="ad-test--mpu--transparent">
+            <div class="ad-test--mpu__image"></div>
+        </div>
+    </a>
+</div>
+    
+<script type="text/javascript" class="breakout__script">
+    (function () {
+        if (typeof require === 'function') {
+            require([
+                'bean',
+                'bonzo',
+                'common/utils/$'
+            ], function (
+                bean,
+                bonzo,
+                $
+            ) {
+                var $img = $('#dfp-ad--right .ad-test--mpu__image'),
+                      $imgContainer = $('#dfp-ad--right .ad-test--mpu--transparent');
+                $img.css({
+                    height: (bonzo.viewport().height*2) + 'px',
+                    top: window.pageYOffset - $imgContainer.offset().top + 'px'
+                });
+                bean.on(window, 'scroll', function () {
+                    $img.css('top', window.pageYOffset - $imgContainer.offset().top + 'px');
+                });
+            });
+        }
+    })();
+</script>

@@ -1,0 +1,49 @@
+<div class="breakout__html">
+    <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
+        <div class="facia-container__inner">Advertisement</div>
+    </div>
+    <div class="adFullWidth__adBWrapper l-side-margins">
+        <div class="adFullWidthLeft"></div>
+        <a href="%%CLICK_URL_ESC%%%%DEST_URL%%">
+            <div class="gs-container">
+                <div class="adFullWidth__adWrapper">
+                    <div class="facia-container--layout-front">
+                        <div class="facia-container__inner">
+                            <div class="adFullWidth__cta"></div>
+                            <div class="adFullWidth__subject"></div>
+                            <div class="adFullWidth250__car"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<script type="text/javascript" class="breakout__script">
+   (function () {
+        if (typeof require === 'function') {
+            require([
+                'bean',
+                'bonzo',
+                'qwery',
+                'common/utils/$',
+                'common/utils/mediator'
+            ], function (
+                bean,
+                bonzo,
+                qwery,
+                $,
+                mediator
+            ) {
+                var $adContainerMid = $('#dfp-ad--merchandising .adFullWidth__adBWrapper'),
+                    listener = function () {
+                        if ((window.pageYOffset + bonzo.viewport().height) > ($adContainerMid.offset().top)) {
+                            $adContainerMid.addClass('animationGo');
+                            mediator.off('window:scroll', listener);
+                        }
+                    };
+                mediator.on('window:scroll', listener);
+            });
+        }
+    })();
+</script>

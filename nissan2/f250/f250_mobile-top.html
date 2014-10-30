@@ -1,0 +1,110 @@
+<div class="breakout__html">
+    <style type="text/css">
+        /* These are over-riding site styles USE WITH CAUTION */
+        .top-banner-ad-container--mobile .ad-slot--top-banner-ad {
+        height: 118px !important;
+        padding-top: 0;
+        }
+        /* End of nasty hacks */
+        .ad-slot--top-above-nav .ad-slot__label {
+            display: none;
+        }
+        .top-banner-ad-container--facia-layout .ad-slot--top-banner-ad .ad-slot__label,
+        .ad-slot__label.adFullWidth__label {
+            width: auto;
+            display: block;
+            height: 18px;
+            border-top: 0;
+            text-align: left;
+        }
+        .adFullWidth__adWrapper {
+            height: 100px;
+            box-sizing: border-box;
+            position: relative;                      
+        }
+        .adFullWidth__adBWrapper {
+background-color: #ffffff;
+            background-image: url(%%FILE:JPG2%%);
+            background-repeat: repeat-x;
+            background-position: left bottom;
+            background-size: 75% 50%;
+        } 
+        .adFullWidth__adWrapper .facia-container__inner {
+            background-color: #ffffff;
+            background-image: url(%%FILE:JPG1%%);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            height: 100px;
+            position: relative;
+            background-size: 100% 50%;
+        }
+        .adFullWidth__adBWrapper .adFullWidthLeft {
+            width: 50%;
+            height: 100px;
+            background-color: #ffffff;
+            position: absolute;
+        }
+        .adFullWidth__subject {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(%%FILE:PNG7%%) no-repeat top left;
+            width: 82px;
+            height: 100px;
+        }
+        .adFullWidth__cta {
+            position: absolute;
+            left: 90px;
+            top: 10px;
+            background: url(%%FILE:PNG8%%) no-repeat top left;
+            background-size: contain;
+            width: 50%;
+            height: 100px;
+        }
+        .adFullWidth250__car {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-image: url(%%FILE:PNG6%%);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: contain;
+            width: 48%;
+            height: 100px;
+        }
+        .adFullWidth__bg-left {
+            width: 50%;
+            height: 100px;
+            position: absolute;
+            background: #ffffff;
+        }
+        @media (min-width: 480px){
+            .adFullWidth250__car {
+                width: 40%;
+            }
+        }
+        .adFullWidth__adBWrapper.l-side-margins:after,
+        .adFullWidth__adBWrapper.l-side-margins:before {
+            background-color: rgba(153,153,153, .2);
+        }
+    </style>
+    <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
+        <div class="facia-container__inner">Advertisement</div>
+    </div>
+    <div class="adFullWidth__adBWrapper l-side-margins">
+        <div class="adFullWidthLeft"></div>
+        <a href="%%CLICK_URL_ESC%%%%DEST_URL%%">
+            <div class="gs-container">
+                <div class="adFullWidth__adWrapper">
+                    <div class="facia-container--layout-front">
+                        <div class="facia-container__inner">
+                            <div class="adFullWidth__cta"></div>
+                            <div class="adFullWidth__subject"></div>
+                            <div class="adFullWidth250__car"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

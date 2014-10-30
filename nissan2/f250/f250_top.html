@@ -1,0 +1,232 @@
+<div class="breakout__html">
+    <style type="text/css">
+        /* These are over-riding site styles USE WITH CAUTION */
+        .top-banner-ad-container--desktop,
+        .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+            display: block !important;
+            max-width: none !important;
+        }
+        .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+            width: 100% !important;
+            padding: 0 !important;
+            margin-left: 0 !important;
+        }
+        /* End of nasty hacks */
+        .ad-slot--top-above-nav .ad-slot__label {
+            display: none;
+        }
+        .top-banner-ad-container--facia-layout .ad-slot--top-banner-ad .ad-slot__label,
+        .ad-slot__label.adFullWidth__label {
+            width: auto;
+            display: block;
+            height: 18px;
+            border-top: 0;
+            text-align: left;
+        }
+        @media (max-width: 1140px){
+            .adFullWidth__adBWrapper .gs-container {
+                max-width: none;
+            }
+        }
+        .adFullWidth__adWrapper {
+            height: 100px;
+            box-sizing: border-box;
+            position: relative;                      
+        }
+        .adFullWidth__adBWrapper {
+            background-image: url(%%FILE:JPG2%%);
+            background-repeat: repeat-x;
+            background-position: left bottom;
+            background-size: 75% 50%;
+        } 
+        .adFullWidth__adWrapper .facia-container__inner {
+            background-color: #ffffff;
+            background-image: url(%%FILE:JPG1%%);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            height: 100px;
+            position: relative;
+            background-size: 100% 50%;
+        }
+        .adFullWidth__adBWrapper .adFullWidthLeft {
+            width: 50%;
+            height: 100px;
+            background-color: #ffffff;
+            position: absolute;
+        }
+        .adFullWidth__subject {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(%%FILE:PNG7%%) no-repeat top left;
+            background-size: contain;
+            width: 82px;
+            height: 100px;
+        }
+        .adFullWidth__cta {
+            position: absolute;
+            left: 90px;
+            top: -81px;
+            background: url(%%FILE:PNG8%%) no-repeat top left;
+            background-size: contain;
+            width: 50%;
+            height: 100px;
+        }
+.f250--top .adFullWidth__cta {
+top: 10px;
+}
+        .animationGo .adFullWidth__cta {
+            /*transform-origin*/
+            -webkit-transform-origin: top left;
+               -moz-transform-origin: top left;
+                -ms-transform-origin: top left;
+                 -o-transform-origin: top left;
+                    transform-origin: top left;
+            /*animation-name*/
+            -webkit-animation-name: adFullWidthAn1;
+               -moz-animation-name: adFullWidthAn1;
+                -ms-animation-name: adFullWidthAn1;
+                 -o-animation-name: adFullWidthAn1;
+                    animation-name: adFullWidthAn1;
+            /*animation-duration*/
+            -webkit-animation-duration: 1s;
+               -moz-animation-duration: 1s;
+                -ms-animation-duration: 1s;
+                 -o-animation-duration: 1s;
+                    animation-duration: 1s;
+            /*animation-iteration-count*/
+            -webkit-animation-iteration-count: 1;
+               -moz-animation-iteration-count: 1;
+                -ms-animation-iteration-count: 1;
+                 -o-animation-iteration-count: 1;
+                    animation-iteration-count: 1;
+            /*animation-delay*/
+            -webkit-animation-delay: .3s;
+               -moz-animation-delay: .3s;
+                -ms-animation-delay: .3s;
+                 -o-animation-delay: .3s;
+                    animation-delay: .3s;  
+            -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+            animation-fill-mode: forwards;
+        }
+        @-moz-keyframes adFullWidthAn1 {
+            100% {
+                -moz-transform: translate(0, 91px);
+            }
+        }
+        @-webkit-keyframes adFullWidthAn1 {
+            100% {
+                -webkit-transform: translate(0, 91px);
+            }
+        }
+        @-o-keyframes adFullWidthAn1 {
+            100% {
+                -o-transform: translate(0, 91px);
+            }
+        }
+        @keyframes adFullWidthAn1 {
+            100% {
+                transform: translate(0, 91px);
+            }
+        }
+        .adFullWidth250__car {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-image: url(%%FILE:PNG6%%);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: contain;
+            width: 48%;
+            height: 100px;
+        }
+        .adFullWidth__bg-left {
+            width: 50%;
+            height: 100px;
+            position: absolute;
+            background: #ffffff;
+        }
+        @media (min-width: 480px){
+            .adFullWidth250__car {
+                width: 40%;
+            }
+        }
+        @media (min-width: 741px){
+            .adFullWidth__subject {
+                left: 0;
+                background: url(%%FILE:PNG1%%) no-repeat top left;
+                width: 138px;
+                height: 188px;
+            }
+            .adFullWidth__cta {
+                left: 150px;
+                top: -81px;
+                background: url(%%FILE:PNG2%%) no-repeat top left;
+                width: 304px;
+                height: 61px;
+            }
+            f250--top .adFullWidth__cta {
+                top: 10px;
+             }
+            .adFullWidth250__car {
+                right: 40px;
+                background-image: url(%%FILE:PNG5%%);
+                width: 380px;
+                height: 250px;
+            }
+            .adFullWidth__adWrapper .facia-container__inner {
+                background-image: url(%%FILE:PNG3%%);
+                background-size: 75% 75%;
+            }
+            .adFullWidth__adBWrapper {
+                background-image: url(%%FILE:PNG4%%);
+                background-size: 75% 75%;
+            } 
+            .adFullWidth__adWrapper,
+            .adFullWidth__adBWrapper .adFullWidthLeft,
+            .adFullWidth__adBWrapper .facia-container__inner,
+            .adFullWidth__bg-left {
+                height: 250px;
+            }
+        }
+        @media (min-width: 981px) {
+            .adFullWidth250__car {
+                width: 516px;
+                height: 250px;
+            }
+        }
+       @media (min-width: 1141px){       
+           .adFullWidth__subject {
+
+           }
+           .adFullWidth__adWrapper .facia-container__inner,
+           .adFullWidth__adBWrapper {
+               background-size: auto;
+           }
+        }
+
+        .adFullWidth__adBWrapper.l-side-margins:after,
+        .adFullWidth__adBWrapper.l-side-margins:before {
+            background-color: rgba(153,153,153, .2);
+        }
+    </style>
+    <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
+        <div class="facia-container__inner">Advertisement</div>
+    </div>
+    <div class="adFullWidth__adBWrapper l-side-margins f250--top">
+        <div class="adFullWidthLeft"></div>
+        <a href="%%CLICK_URL_ESC%%%%DEST_URL%%">
+            <div class="gs-container">
+                <div class="adFullWidth__adWrapper">
+                    <div class="facia-container--layout-front">
+                        <div class="facia-container__inner">
+                            <div class="adFullWidth__cta"></div>
+                            <div class="adFullWidth__subject"></div>
+                            <div class="adFullWidth250__car"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
