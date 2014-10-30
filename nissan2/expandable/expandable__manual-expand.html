@@ -276,30 +276,17 @@
             mediator
         ) {
             var isClosed = true,
-                  $ad         = $('.ad-test--expand'),
-                  listener    = function () {
-                    isClosed = false;
-                    var adExpandedHeight = Math.min(bonzo.viewport().height * 2 / 3, 600);
-                    if ((window.pageYOffset + bonzo.viewport().height) > ($ad.offset().top + adExpandedHeight)) {
-                        $ad.css('height', adExpandedHeight);
-                        mediator.off('window:scroll', listener);
-                        $('.ad-test__close-button').toggleClass('button-spin');
-                    }
-                };
+            $ad = $('.ad-test--expand')
 
             $ad.css('height', Math.min(bonzo.viewport().height / 3, 300));
             $('.ad-test-collapse__slide').css('height', Math.min(bonzo.viewport().height / 3, 300));
 
-            mediator.on('window:scroll', listener);
-
             bean.on(qwery('.ad-test__close-button')[0], 'click', function () {
-                //mediator.off('window:scroll', listener);
                 var height = isClosed ? Math.min(bonzo.viewport().height * 2 / 3, 600) : Math.min(bonzo.viewport().height / 3, 300);
                 $('.ad-test__close-button').toggleClass('button-spin')
                 $ad.css('height', height)
                 $('.ad-test-collapse__slide').css('height', Math.min(bonzo.viewport().height / 3, 300))
                 isClosed = isClosed ? false : true;
-                //$('.ad-test__close-button').remove();
             });
 
          });
