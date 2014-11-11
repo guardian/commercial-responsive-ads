@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Responsive Ad</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="HandheldFriendly" content="True" />
+        <style type="text/css">
+        
+            /* Temp, needed for local testing only */
+            .gs-container {
+                max-width: 1300px;
+                margin: 0 auto;
+            } 
+            /* These are over-riding site styles USE WITH CAUTION */
+            @media (min-width: 741px) {
+                .top-banner-ad-container--desktop,
+                .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+                    display: block !important;
+                    max-width: none !important;
+                }
+            }
+            .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+                width: 100% !important;
+                padding: 0 !important;
+                margin-left: 0 !important;
+            }
+            /* End of nasty hacks */
+            .ad-slot--top-above-nav .ad-slot__label {
+                display: none;
+            }
+            .top-banner-ad-container--facia-layout .ad-slot--top-banner-ad .ad-slot__label,
+            .ad-slot__label.adFullWidth__label {
+                width: auto;
+                display: block;
+                height: 18px;
+                border-top: 0;
+                text-align: left;
+            }
+            .adFullWidth__adBWrapper .container__body {
+                height: 100px;
+                position: relative;
+                padding-top: 0;
+            }  
+            .adFullWidth__people {
+                height: 100px;
+                box-sizing: border-box;
+                background-repeat: no-repeat;
+                position: relative;
+                background-position: 100% 100%;
+                position: relative;
+                background-image: url(images/Android_1300x250_Guardian_people.png);
+                background-size: 120%;
+                width: 80%;
+            }
+
+            .adFullWidth__subject {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: url(images/Android_1300x250_Guardian_logo.png) no-repeat 100% 100%;
+                background-size: contain;
+                width: 30%;
+                height: 90px;
+            }
+            .adFullWidth__cta {
+                background: url(images/Android_1300x250_Guardian_be-together.png) no-repeat 50% 0;
+                background-size: contain;
+                position: absolute;
+                top: 10px;
+                width: 90%;
+                height: 48px;
+                margin-left: 5%;
+            }
+            
+            @media (min-width: 480px){
+                .adFullWidth__cta {
+                    top: 0;
+                }
+            }
+            
+            @media (max-width: 739px){
+                .adFullWidth__adWrapper .facia-container__inner {
+                    background-size: contain;
+                }
+            }
+
+            @media (min-width: 740px){
+            .adFullWidth__adBWrapper {
+                background: url(images/Android_1300x250_Guardian_background.png) repeat-x 50% 0;
+            }
+                .adFullWidth__adWrapper {
+                    background-size: auto;
+                }
+                .adFullWidth__adWrapper,
+                .adFullWidth__adBWrapper .container__body,
+                .adFullWidth__people {
+                    height: 250px;
+                }
+                .adFullWidth__people {
+                    background-size: 752px;
+                    background-position: 100% 100%;
+                    width: 75%;
+                }
+                .adFullWidth__cta {
+                    top: 40px;
+                    height: 48px;
+                    width: 90%;
+                }
+                .adFullWidth__subject {
+                    width: 25%;
+                    bottom: 10px;
+                }
+            }
+            @media (min-width: 980px){
+                .adFullWidth__people {
+                    background-size: contain;
+                    width: 80%;
+                }
+                .adFullWidth__subject {
+                    width: 20%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+<div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
+            <div class="facia-container__inner">Advertisement</div>
+        </div>
+        <div class="adFullWidth__adBWrapper l-side-margins f250--top">
+            <div class="adFullWidthLeft"></div>
+            <a href="%%CLICK_URL_ESC%%http://www.theguardian.com">
+                <div class="gs-container">
+                    <div class="adFullWidth__adWrapper">
+                        <div class="facia-container--layout-front">
+                            <div class="facia-container__inner">
+                                <div class="adFullWidth__people"></div>
+                                <div class="adFullWidth__cta"></div>
+                                <div class="adFullWidth__subject"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </body>
+</html>

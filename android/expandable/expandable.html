@@ -1,0 +1,275 @@
+<div class="breakout__html">
+    <style>
+        #dfp-ad--merchandising-high {
+            min-height: 0;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 740px) {
+            #dfp-ad--merchandising-high .ad-slot__label--wrapper  {
+                width: auto;
+            }
+            .ad-exp--expand .facia-container__inner {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        #dfp-ad--merchandising-high .ad-slot__label {
+            text-align: left;
+        }
+        .ad-exp--expand {
+            height: 0;
+            position: relative;
+            background-color: #ffffff;
+            overflow: hidden;
+            -webkit-transition: height 1s;
+               -moz-transition: height 1s;
+                 -o-transition: height 1s;
+                    transition: height 1s;
+        }
+        .ad-exp--expand .facia-container__inner {
+            height: 100%;
+            position: relative;
+            background-color: #ffffff;
+            background-image: url(%%FILE:JPG1%%);
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+        .ad-exp-collapse__slide {
+            position: absolute;
+            top : 0;
+            width: 100%;
+            z-index: 2;
+        }
+        .ad-exp--expand .ad-exp__border {
+            position: absolute;
+            z-index: 5;
+            bottom: 0;
+            height: 4px;
+            width: 100%;
+            background-image: url(%%FILE:PNG6%%);
+            background-repeat: repeat-x;
+            background-position: bottom;
+        }
+        .ad-exp-collapse__slide.slide-1 .ad-exp__cta {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(%%FILE:PNG10%%);
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            background-size: 112%;
+            right: 0;
+        }
+        .ad-exp-collapse__slide.slide-1 .ad-exp__logo {
+            position: absolute;
+            left: 20px;
+            width: 20%;
+            height: 100%;
+            max-height: 200px;
+            background-image: url(%%FILE:PNG1%%);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .ad-exp-collapse__slide.slide-1 .ad-exp__subject {
+            position: absolute;
+            left: 28%;
+            width: 45%;
+            height: 100%;      
+            background-image: url(%%FILE:PNG2%%);
+            background-repeat: no-repeat;
+            background-size: contain;         
+        }
+    
+        .ad-exp-collapse__slide.slide-1 {
+            background-image: url(%%FILE:JPG1%%);
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+    
+        .ad-exp-collapse__slide.slide-2 {
+            top: auto;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .ad-exp__close-button {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            -webkit-border-radius: 100px;
+            border-radius: 100px;
+            border: 1px solid white;
+            background-color: black;
+            margin: 5px;
+            padding: 0;
+            z-index: 3;
+            height: 32px;
+            width: 32px;
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -moz-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+        .ad-exp__close-button:focus {
+            outline-color: transparent;
+            outline-style: none;
+        }
+        .ad-exp__close-button.button-spin {
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+        .ad-exp-collapse__slide.slide-2 .ad-exp__text-1,
+        .ad-exp-collapse__slide.slide-2 .ad-exp__text-2, 
+        .ad-exp-collapse__slide.slide-2 .ad-exp__text-3
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0 20px;
+            width: 100%;
+            height: 100%;
+        }
+        .ad-exp-collapse__slide.slide-2 .ad-exp__text-inner {
+            width: 100%;
+            height: 100%;
+            background-size: auto 33%;
+            background-repeat: no-repeat;
+        }
+
+        .ad-exp-collapse__slide.slide-2 .ad-exp__text-1 .ad-exp__text-inner {
+            background-image: url(%%FILE:PNG7%%);
+            background-position: 0 0;
+        }
+        .ad-exp-collapse__slide.slide-2 .ad-exp__text-2 .ad-exp__text-inner {
+            background-image: url(%%FILE:PNG8%%);
+            background-position: 0 40%;
+        }
+        .ad-exp-collapse__slide.slide-2 .ad-exp__text-3 .ad-exp__text-inner {
+            background-image: url(%%FILE:PNG9%%);
+            background-position: 0 80%;
+        }
+    
+        @media (min-width: 480px){
+            .ad-exp-collapse__slide.slide-1 .ad-exp__logo {
+                width: 12.5%;
+            }
+            .ad-exp-collapse__slide.slide-1 .ad-exp__subject {
+                left: 18%;
+                width: 37.5%;
+            }
+            .ad-exp-collapse__slide.slide-1 .ad-exp__cta {
+                background-size: 75%;
+            }
+            .ad-exp-collapse__slide.slide-2 .ad-exp__text-1 {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+    
+            .ad-exp-collapse__slide.slide-2 .ad-exp__text-1 {
+                left: 20px;
+            }
+        }
+    
+        @media (min-width: 740px){
+            .ad-slot__text {
+                background-size: 50%;
+            }
+            .ad-exp-collapse__slide.slide-1 .ad-exp__cta {
+/*                background-image: url(%%FILE:PNG11%%);
+                background-size: 125%;
+                
+*/
+            } 
+        }
+        @media (min-width: 980px){
+            .ad-slot__text {
+                background-size: 70%;
+            }
+            .ad-exp-collapse__slide.slide-1 .ad-exp__cta {
+                background-size: contain;
+            }
+        }
+    </style>
+    <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
+        <div class="facia-container__inner">Advertisement</div>
+    </div>
+    <div class="ad-exp--expand l-side-margins">
+        <div class="facia-container__inner facia-container__inner--full-span">
+            <button class="ad-exp__close-button">
+                <i class="i i-close-icon-white-small"></i>
+            </button>
+            <a href="%%CLICK_URL_ESC%%%%DEST_URL%%">
+                <div class="ad-exp-collapse__slide slide-1">
+                    <div class="ad-exp__cta"></div>
+                    <div class="ad-exp__logo"></div>
+                </div>
+                <div class="ad-exp-collapse__slide slide-2">
+                    <div class="ad-exp__text-1"></div>
+                </div>
+                <div class="ad-exp__border"></div>
+            </a>
+        </div>
+    </div>
+    <div class="ad-slot__label--wrapper facia-container__inner facia-container__inner--full-span">
+        <div class="ad-slot__label"></div>
+    </div>
+</div>
+
+<script type="text/javascript" class="breakout__script">
+(function () {
+    if (typeof require === 'function') {
+        require([
+            'bean',
+            'bonzo',
+            'qwery',
+            'common/utils/$',
+            'common/utils/mediator'
+        ], function (
+            bean,
+            bonzo,
+            qwery,
+            $,
+            mediator
+        ) {
+            var isClosed = true,
+                  $ad         = $('.ad-exp--expand'),
+                  listener    = function () {
+                    isClosed = false;
+                    var adExpandedHeight = Math.min(bonzo.viewport().height * 2 / 3, 600);
+                    if ((window.pageYOffset + bonzo.viewport().height) > ($ad.offset().top + adExpandedHeight)) {
+                        $ad.css('height', adExpandedHeight);
+                        mediator.off('window:scroll', listener);
+                        $('.ad-exp__close-button').toggleClass('button-spin');
+                    }
+                };
+
+            $ad.css('height', Math.min(bonzo.viewport().height / 3, 300));
+            $('.ad-exp-collapse__slide').css('height', Math.min(bonzo.viewport().height / 3, 300));
+
+            mediator.on('window:scroll', listener);
+
+            bean.on(qwery('.ad-exp__close-button')[0], 'click', function () {
+                //mediator.off('window:scroll', listener);
+                var height = isClosed ? Math.min(bonzo.viewport().height * 2 / 3, 600) : Math.min(bonzo.viewport().height / 3, 300);
+                $('.ad-exp__close-button').toggleClass('button-spin')
+                $ad.css('height', height)
+                $('.ad-exp-collapse__slide').css('height', Math.min(bonzo.viewport().height / 3, 300))
+                isClosed = isClosed ? false : true;
+                //$('.ad-exp__close-button').remove();
+            });
+
+         });
+    }
+})();
+</script>
