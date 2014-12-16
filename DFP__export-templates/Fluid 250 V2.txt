@@ -1,0 +1,585 @@
+{
+  "name": "Fluid 250 V2",
+  "description": "",
+  "variables": [
+    {
+      "label": "Link",
+      "uniqueName": "Link",
+      "description": "The link for the ad",
+      "isRequired": true,
+      "variableType": "STRING"
+    },
+    {
+      "label": "Tracking pixel",
+      "uniqueName": "Trackingpixel",
+      "description": "URL for the tracking pixel.",
+      "isRequired": false,
+      "variableType": "STRING"
+    },
+    {
+      "choices": [
+        {
+          "label": "show",
+          "value": "show"
+        },
+        {
+          "label": "hide",
+          "value": "hide"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "show",
+      "label": "Show Advert label",
+      "uniqueName": "ShowAdvertlabel",
+      "description": "Shows or hides the \"Advertising\" label above the advert. On by default.",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "choices": [
+        {
+          "label": "tall",
+          "value": "tall"
+        },
+        {
+          "label": "medium",
+          "value": "medium"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "tall",
+      "label": "Creative height",
+      "uniqueName": "Creativeheight",
+      "description": "Height of creative.\ntall \u003d 250px\nmedium \u003d 200px",
+      "isRequired": true,
+      "variableType": "LIST"
+    },
+    {
+      "defaultValue": "transparent",
+      "label": "Background colour",
+      "uniqueName": "Backgroundcolour",
+      "description": "6 figure hex value with #, leave blank for transparent.",
+      "isRequired": false,
+      "variableType": "STRING"
+    },
+    {
+      "mimeTypes": [
+        "JPG",
+        "PNG",
+        "GIF"
+      ],
+      "label": "Background Image",
+      "uniqueName": "BackgroundImage",
+      "description": "The main image, can either be the main subject or more usually the repeatable background that goes full width.",
+      "isRequired": false,
+      "variableType": "ASSET"
+    },
+    {
+      "choices": [
+        {
+          "label": "no-repeat",
+          "value": "no-repeat"
+        },
+        {
+          "label": "repeat",
+          "value": "repeat"
+        },
+        {
+          "label": "repeat-x",
+          "value": "repeat-x"
+        },
+        {
+          "label": "repeat-y",
+          "value": "repeat-y"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "no-repeat",
+      "label": "Background repeat",
+      "uniqueName": "Backgroundrepeat",
+      "description": "Does the background image repeat?",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "choices": [
+        {
+          "label": "left top",
+          "value": "left top"
+        },
+        {
+          "label": "left center",
+          "value": "left center"
+        },
+        {
+          "label": "left bottom",
+          "value": "left bottom"
+        },
+        {
+          "label": "right top",
+          "value": "right top"
+        },
+        {
+          "label": "right center",
+          "value": "right center"
+        },
+        {
+          "label": "right bottom",
+          "value": "right bottom"
+        },
+        {
+          "label": "center top",
+          "value": "center top"
+        },
+        {
+          "label": "center center",
+          "value": "center center"
+        },
+        {
+          "label": "center bottom",
+          "value": "center bottom"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "left top",
+      "label": "Background position",
+      "uniqueName": "Backgroundposition",
+      "description": "Position of the main image",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "mimeTypes": [
+        "JPG",
+        "PNG",
+        "GIF"
+      ],
+      "label": "Background Image mobile",
+      "uniqueName": "BackgroundImagemobile",
+      "isRequired": false,
+      "variableType": "ASSET"
+    },
+    {
+      "choices": [
+        {
+          "label": "no-repeat",
+          "value": "no-repeat"
+        },
+        {
+          "label": "repeat",
+          "value": "repeat"
+        },
+        {
+          "label": "repeat-x",
+          "value": "repeat-x"
+        },
+        {
+          "label": "repeat-y",
+          "value": "repeat-y"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "no-repeat",
+      "label": "Background image mobile repeat",
+      "uniqueName": "Backgroundimagemobilerepeat",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "choices": [
+        {
+          "label": "left top",
+          "value": "left top"
+        },
+        {
+          "label": "left center",
+          "value": "left center"
+        },
+        {
+          "label": "left bottom",
+          "value": "left bottom"
+        },
+        {
+          "label": "right top",
+          "value": "right top"
+        },
+        {
+          "label": "right center",
+          "value": "right center"
+        },
+        {
+          "label": "right bottom",
+          "value": "right bottom"
+        },
+        {
+          "label": "center top",
+          "value": "center top"
+        },
+        {
+          "label": "center center",
+          "value": "center center"
+        },
+        {
+          "label": "center bottom",
+          "value": "center bottom"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "left top",
+      "label": "Background Image mobile position",
+      "uniqueName": "BackgroundImagemobileposition",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "mimeTypes": [
+        "JPG",
+        "PNG",
+        "GIF"
+      ],
+      "label": "Layer 1 background image",
+      "uniqueName": "Layer1backgroundimage",
+      "isRequired": false,
+      "variableType": "ASSET"
+    },
+    {
+      "choices": [
+        {
+          "label": "left top",
+          "value": "left top"
+        },
+        {
+          "label": "left center",
+          "value": "left center"
+        },
+        {
+          "label": "left bottom",
+          "value": "left bottom"
+        },
+        {
+          "label": "right top",
+          "value": "right top"
+        },
+        {
+          "label": "right center",
+          "value": "right center"
+        },
+        {
+          "label": "right bottom",
+          "value": "right bottom"
+        },
+        {
+          "label": "center top",
+          "value": "center top"
+        },
+        {
+          "label": "center center",
+          "value": "center center"
+        },
+        {
+          "label": "center bottom",
+          "value": "center bottom"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "left top",
+      "label": "Layer 1 background image position",
+      "uniqueName": "Layer1backgroundimageposition",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "mimeTypes": [
+        "JPG",
+        "PNG",
+        "GIF"
+      ],
+      "label": "Layer 2 background image",
+      "uniqueName": "Layer2backgroundimage",
+      "isRequired": false,
+      "variableType": "ASSET"
+    },
+    {
+      "choices": [
+        {
+          "label": "left top",
+          "value": "left top"
+        },
+        {
+          "label": "left center",
+          "value": "left center"
+        },
+        {
+          "label": "left bottom",
+          "value": "left bottom"
+        },
+        {
+          "label": "right top",
+          "value": "right top"
+        },
+        {
+          "label": "right center",
+          "value": "right center"
+        },
+        {
+          "label": "right bottom",
+          "value": "right bottom"
+        },
+        {
+          "label": "center top",
+          "value": "center top"
+        },
+        {
+          "label": "center center",
+          "value": "center center"
+        },
+        {
+          "label": "center bottom",
+          "value": "center bottom"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "left top",
+      "label": "Layer 2 background image position",
+      "uniqueName": "Layer2backgroundimageposition",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "mimeTypes": [
+        "JPG",
+        "PNG",
+        "GIF"
+      ],
+      "label": "Layer 3 background image",
+      "uniqueName": "Layer3backgroundimage",
+      "isRequired": false,
+      "variableType": "ASSET"
+    },
+    {
+      "choices": [
+        {
+          "label": "left top",
+          "value": "left top"
+        },
+        {
+          "label": "left center",
+          "value": "left center"
+        },
+        {
+          "label": "left bottom",
+          "value": "left bottom"
+        },
+        {
+          "label": "right top",
+          "value": "right top"
+        },
+        {
+          "label": "right center",
+          "value": "right center"
+        },
+        {
+          "label": "right bottom",
+          "value": "right bottom"
+        },
+        {
+          "label": "center top",
+          "value": "center top"
+        },
+        {
+          "label": "center center",
+          "value": "center center"
+        },
+        {
+          "label": "center bottom",
+          "value": "center bottom"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "left top",
+      "label": "Layer 3 background image position",
+      "uniqueName": "Layer3backgroundimageposition",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "mimeTypes": [
+        "JPG",
+        "PNG",
+        "GIF"
+      ],
+      "label": "Layer 1 background image mobile",
+      "uniqueName": "Layer1backgroundimagemobile",
+      "isRequired": false,
+      "variableType": "ASSET"
+    },
+    {
+      "choices": [
+        {
+          "label": "left top",
+          "value": "left top"
+        },
+        {
+          "label": "left center",
+          "value": "left center"
+        },
+        {
+          "label": "left bottom",
+          "value": "left bottom"
+        },
+        {
+          "label": "right top",
+          "value": "right top"
+        },
+        {
+          "label": "right center",
+          "value": "right center"
+        },
+        {
+          "label": "right bottom",
+          "value": "right bottom"
+        },
+        {
+          "label": "center top",
+          "value": "center top"
+        },
+        {
+          "label": "center center",
+          "value": "center center"
+        },
+        {
+          "label": "center bottom",
+          "value": "center bottom"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "left top",
+      "label": "Layer 1 background image position mobile",
+      "uniqueName": "Layer1backgroundimagepositionmobile",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "mimeTypes": [
+        "JPG",
+        "PNG",
+        "GIF"
+      ],
+      "label": "Layer 2 background image mobile",
+      "uniqueName": "Layer2backgroundimagemobile",
+      "isRequired": false,
+      "variableType": "ASSET"
+    },
+    {
+      "choices": [
+        {
+          "label": "left top",
+          "value": "left top"
+        },
+        {
+          "label": "left center",
+          "value": "left center"
+        },
+        {
+          "label": "left bottom",
+          "value": "left bottom"
+        },
+        {
+          "label": "right top",
+          "value": "right top"
+        },
+        {
+          "label": "right center",
+          "value": "right center"
+        },
+        {
+          "label": "right bottom",
+          "value": "right bottom"
+        },
+        {
+          "label": "center top",
+          "value": "center top"
+        },
+        {
+          "label": "center center",
+          "value": "center center"
+        },
+        {
+          "label": "center bottom",
+          "value": "center bottom"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "left top",
+      "label": "Layer 2 background image position mobile",
+      "uniqueName": "Layer2backgroundimagepositionmobile",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "mimeTypes": [
+        "JPG",
+        "PNG",
+        "GIF"
+      ],
+      "label": "Layer 3 background image mobile",
+      "uniqueName": "Layer3backgroundimagemobile",
+      "isRequired": false,
+      "variableType": "ASSET"
+    },
+    {
+      "choices": [
+        {
+          "label": "left top",
+          "value": "left top"
+        },
+        {
+          "label": "left center",
+          "value": "left center"
+        },
+        {
+          "label": "left bottom",
+          "value": "left bottom"
+        },
+        {
+          "label": "right top",
+          "value": "right top"
+        },
+        {
+          "label": "right center",
+          "value": "right center"
+        },
+        {
+          "label": "right bottom",
+          "value": "right bottom"
+        },
+        {
+          "label": "center top",
+          "value": "center top"
+        },
+        {
+          "label": "center center",
+          "value": "center center"
+        },
+        {
+          "label": "center bottom",
+          "value": "center bottom"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "left top",
+      "label": "Layer 3 background image position mobile ",
+      "uniqueName": "Layer3backgroundimagepositionmobile",
+      "isRequired": false,
+      "variableType": "LIST"
+    }
+  ],
+  "formatter": "\u003cscript type\u003d\"application/json\" class\u003d\"breakout__script\"\u003e\n{\n    \"name\": \"fluid250\",\n    \"params\": {\n        \"link\": \"[%Link%]\",\n        \"clickMacro\": \"%%CLICK_URL_ESC%%\",\n        \"trackingPixel\": \"[%Trackingpixel%]\",\n        \"cacheBuster\": \"%%CACHEBUSTER%%\",\n        \"creativeHeight\": \"[%Creativeheight%]\",\n        \"showAdLabel\": \"[%ShowAdvertlabel%]\",\n        \"backgroundColor\": \"[%Backgroundcolour%]\",\n        \"backgroundImage\": \"[%BackgroundImage%]\",\n        \"backgroundRepeat\": \"[%Backgroundrepeat%]\",\n        \"backgroundPosition\": \"[%Backgroundposition%]\",\n        \"backgroundImageM\": \"[%BackgroundImagemobile%]\",\n        \"backgroundRepeatM\": \"[%Backgroundimagemobilerepeat%]\",\n        \"backgroundPositionM\": \"[%BackgroundImagemobileposition%]\",\n        \"layerOneBGImage\": \"[%Layer1backgroundimage%]\",\n        \"layerOneBGPosition\": \"[%Layer1backgroundimageposition%]\",\n        \"layerTwoBGImage\": \"[%Layer2backgroundimage%]\",\n        \"layerTwoBGPosition\": \"[%Layer2backgroundimageposition%]\",\n        \"layerThreeBGImage\": \"[%Layer3backgroundimage%]\",\n        \"layerThreeBGPosition\": \"[%Layer3backgroundimageposition%]\",\n        \"layerOneBGImageM\": \"[%Layer1backgroundimagemobile%]\",\n        \"layerOneBGPositionM\": \"[%Layer1backgroundimagepositionmobile%]\",\n        \"layerTwoBGImageM\": \"[%Layer2backgroundimagemobile%]\",\n        \"layerTwoBGPositionM\": \"[%Layer2backgroundimagepositionmobile%]\",\n        \"layerThreeBGImageM\": \"[%Layer3backgroundimagemobile%]\",\n        \"layerThreeBGPositionM\": \"[%Layer3backgroundimagepositionmobile%]\"\n    }\n}\n\u003c/script\u003e\n",
+  "type": "USER_DEFINED",
+  "targetPlatforms": [
+    "ANY"
+  ],
+  "isInterstitial": false,
+  "isNativeEligible": false,
+  "isSafeFrameCompatible": false
+}

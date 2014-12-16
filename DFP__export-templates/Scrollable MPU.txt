@@ -1,0 +1,52 @@
+{
+  "name": "Scrollable MPU",
+  "description": "Template to create a \"scrollable\" MPU, you know, the one that looks like there\u0027s a hole punched in the page and the MPU\u0027s peeking through",
+  "variables": [
+    {
+      "mimeTypes": [
+        "JPG",
+        "PNG",
+        "GIF"
+      ],
+      "label": "Image",
+      "uniqueName": "Image",
+      "isRequired": true,
+      "variableType": "ASSET"
+    },
+    {
+      "mimeTypes": [
+        "JPG",
+        "PNG",
+        "GIF"
+      ],
+      "label": "Static Image",
+      "uniqueName": "StaticImage",
+      "description": "Static fallback for mobile devices",
+      "isRequired": true,
+      "variableType": "ASSET"
+    },
+    {
+      "isTrackingUrl": false,
+      "label": "Destination",
+      "uniqueName": "Destination",
+      "isRequired": true,
+      "variableType": "URL"
+    },
+    {
+      "isTrackingUrl": false,
+      "label": "Tracking Pixel",
+      "uniqueName": "TrackingPixel",
+      "description": "URL of the tracking pixel",
+      "isRequired": false,
+      "variableType": "URL"
+    }
+  ],
+  "formatter": "\u003cscript type\u003d\"application/json\" class\u003d\"breakout__script\"\u003e\n    {\n        \"name\": \"scrollable-mpu\",\n        \"params\": {\n            \"image\": \"[%Image%]\",\n            \"staticImage\": \"[%StaticImage%]\",\n            \"destination\": \"[%Destination%]\",\n            \"trackingPixel\": \"[%TrackingPixel%]\",\n            \"clickMacro\": \"%%CLICK_URL_ESC%%\"\n        }\n    }\n\u003c/script\u003e\n",
+  "type": "USER_DEFINED",
+  "targetPlatforms": [
+    "ANY"
+  ],
+  "isInterstitial": false,
+  "isNativeEligible": false,
+  "isSafeFrameCompatible": false
+}
