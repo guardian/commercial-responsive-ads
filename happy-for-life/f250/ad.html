@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Responsive Ad</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="HandheldFriendly" content="True" />
+        <style type="text/css">
+        
+            /* Temp, needed for local testing only */
+            .gs-container {
+                max-width: 1300px;
+                margin: 0 auto;
+            } 
+            /* These are over-riding site styles USE WITH CAUTION */
+            @media (min-width: 741px) {
+                .top-banner-ad-container--desktop,
+                .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+                    display: block !important;
+                    max-width: none !important;
+                }
+            }
+            .adFullWidth__adBWrapper.l-side-margins:after,
+            .adFullWidth__adBWrapper.l-side-margins:before {
+                background: rgba(255,255,255,0.5);
+            }
+            .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+                width: 100% !important;
+                padding: 0 !important;
+                margin-left: 0 !important;
+            }
+            /* End of nasty hacks */
+            .ad-slot--top-above-nav .ad-slot__label {
+                display: none;
+            }
+            .top-banner-ad-container--facia-layout .ad-slot--top-banner-ad .ad-slot__label,
+            .ad-slot__label.adFullWidth__label {
+                width: auto;
+                display: block;
+                height: 18px;
+                border-top: 0;
+                text-align: left;
+            }
+            .adFullWidth__adBWrapper .container__body {
+                height: 100px;
+                position: relative;
+                padding-top: 0;
+            }  
+            .adFullWidth__adWrapper {
+                height: 100px;
+                box-sizing: border-box;
+                background-repeat: no-repeat;
+                background-position: top left;
+                position: relative;
+                background: url(images/girl.png) no-repeat 66% 0;
+                background-size: 200px;
+            }
+            .adFullWidth__adBWrapper {
+                background: url(images/background.jpg) repeat-x 12% 0;
+            }
+            .adFullWidth__subject {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: url(images/logo.png) no-repeat 50% 95%;
+                width: 35%;
+                height: 100%;
+                max-width: 300px;
+            }
+            .adFullWidth__branding {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: url(images/g-icon.png) no-repeat 50% 0;
+                width: 35%;
+                height: 100%;
+                max-width: 300px;
+            }
+            .adFullWidth__cta {
+                background: url(images/cta.png) no-repeat 0 0;
+                background-size: contain;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 65%;
+                height: 100%;
+            }
+            @media (min-width: 740px){
+                .adFullWidth__adWrapper,
+                .adFullWidth__adBWrapper .container__body {
+                    height: 250px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ad-slot__label adFullWidth__label facia-container--layout-front" data-test-id="ad-slot-label">
+            <div class="facia-container__inner">Advertisement</div>
+        </div>
+        <div class="adFullWidth__adBWrapper">
+            <a href="htp://www.theguardian.com">
+                <div class="gs-container">
+                    <div class="adFullWidth__adWrapper">
+                        <div class="facia-container__inner">
+                            <div class="container__body">
+                                <div class="adFullWidth__cta"></div>
+                                <div class="adFullWidth__subject"></div>
+                                <div class="adFullWidth__branding"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </body>
+</html>

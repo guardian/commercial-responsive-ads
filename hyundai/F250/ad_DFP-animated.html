@@ -1,0 +1,275 @@
+<div class="breakout__html">
+        <style type="text/css">
+            /* These are over-riding site styles USE WITH CAUTION */
+            @media (min-width: 741px) {
+                .top-banner-ad-container--desktop,
+                .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+                    display: block !important;
+                    max-width: none !important;
+                }
+            }
+            .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+                width: 100% !important;
+                padding: 0 !important;
+                margin-left: 0 !important;
+            }
+            .top-banner-ad-container--mobile .ad-slot--top-banner-ad {
+                height: 118px;
+                padding: 0;
+            }
+            
+            .f250-hyundai__adBWrapper.f250--top {
+                background: #000;
+            }
+            
+            .f250-hyundai__adBWrapper .gs-container {
+                padding: 0;
+            }
+            /* End of nasty hacks */
+            .f250-hyundai__adBWrapper.f250--top.l-side-margins:after,
+            .f250-hyundai__adBWrapper.f250--top.l-side-margins:before {
+                background: rgba(255,255,255,0.2);
+            }
+            .ad-slot--top-above-nav .ad-slot__label {
+                display: none;
+            }
+            .top-banner-ad-container--facia-layout .ad-slot--top-banner-ad .ad-slot__label,
+            .ad-slot__label.f250-hyundai__label {
+                width: auto;
+                display: block;
+                height: 18px;
+                border-top: 0;
+                text-align: left;
+            }
+            
+            .slide-holder {
+                position: relative;
+                height: 100px;
+            }
+            .slide {
+                position: absolute;
+                top: 0;
+                height: 100px;
+                width: 100%;
+                background-position: 50% 0;
+                background-repeat: no-repeat;
+                background-color: #000;
+            }
+            .slide1,
+            .slide2,
+            .slide3 {
+                /*animation-name*/
+                -webkit-animation-name: f250FadeAni;
+                   -moz-animation-name: f250FadeAni;
+                    -ms-animation-name: f250FadeAni;
+                     -o-animation-name: f250FadeAni;
+                        animation-name: f250FadeAni;
+                /*animation-duration*/
+                -webkit-animation-duration: 2s;
+                   -moz-animation-duration: 2s;
+                    -ms-animation-duration: 2s;
+                     -o-animation-duration: 2s;
+                        animation-duration: 2s;
+                /*animation-iteration-count*/
+                -webkit-animation-iteration-count: 1;
+                   -moz-animation-iteration-count: 1;
+                    -ms-animation-iteration-count: 1;
+                     -o-animation-iteration-count: 1;
+                        animation-iteration-count: 1;
+                        -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+                        animation-fill-mode: forwards;
+            }
+            .slide1 {
+                z-index: 4;
+                background-image: url(%%FILE:JPG2%%);
+                /*animation-delay*/
+                -webkit-animation-delay: 2s;
+                   -moz-animation-delay: 2s;
+                    -ms-animation-delay: 2s;
+                     -o-animation-delay: 2s;
+                        animation-delay: 2s; 
+            }
+            .slide2 {
+                z-index: 3;
+                background-image: url(%%FILE:JPG3%%);
+                -webkit-animation-delay: 4s;
+                   -moz-animation-delay: 4s;
+                    -ms-animation-delay: 4s;
+                     -o-animation-delay: 4s;
+                        animation-delay: 4s; 
+            }
+            .slide3 {
+                z-index: 2;
+                background-image: url(%%FILE:JPG4%%);
+                -webkit-animation-delay: 6s;
+                   -moz-animation-delay: 6s;
+                    -ms-animation-delay: 6s;
+                     -o-animation-delay: 6s;
+                        animation-delay: 6s; 
+            }
+            .slide4 {
+                z-index: 1;
+                
+            }
+            @-moz-keyframes f250FadeAni {
+                0% {
+                    opacity: 1;
+                }
+                75% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                    display: none;
+                }
+            }
+            @-webkit-keyframes f250FadeAni {
+                0% {
+                    opacity: 1;
+                }
+                75% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                    display: none;
+                }
+            }
+            @-o-keyframes f250FadeAni {
+                0% {
+                    opacity: 1;
+                }
+                75% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                    display: none;                    
+                }
+            }
+            @keyframes f250FadeAni {
+                0% {
+                    opacity: 1;
+                }
+                75% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                    display: none;                    
+                }
+            }
+            .f250-hyundai__adBWrapper .container__body {
+                height: 100px;
+                position: relative;
+                padding-top: 0;
+            }
+            .f250-hyundai__adBWrapper .facia-container__inner {
+                background-image: url(%%FILE:JPG1%%);
+                background-repeat: no-repeat;
+                height: 100px;
+            }  
+            .f250-hyundai__subject {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: url(%%FILE:PNG2%%) no-repeat 100% 100%;
+                width: 30%;
+                height: 90px;
+            }
+            .f250-hyundai__cta {
+                background-image: url(%%FILE:PNG1%%);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                position: absolute;
+                top: 60px;
+                width: 90%;
+                height: 80px;
+                margin-left: 5%;
+            }
+            .f250-hyundai__fade {
+                height: 100%;
+                width: 100%;
+            }
+            
+            @media (max-width: 479px){
+                .f250-hyundai__adBWrapper .facia-container__inner {
+                    margin: 0;
+                }
+            }
+            
+            @media (min-width: 480px){
+                .f250-hyundai__cta {
+
+
+                }
+            }
+
+            @media (min-width: 740px){
+                .f250-hyundai__adBWrapper .facia-container__inner {
+                    background-position: 190px 0;
+                }
+                .f250-hyundai__adWrapper {
+                    background-size: auto;
+                }
+                .f250-hyundai__adBWrapper .facia-container__inner,
+                .f250-hyundai__adWrapper,
+                .f250-hyundai__adBWrapper .container__body,
+                .slide-holder,
+                .slide {
+                    height: 250px;
+                }
+
+                .f250-hyundai__cta {
+
+
+                }
+                .f250-hyundai__subject {
+                    width: 25%;
+                }
+            }
+            @media (min-width: 980px){
+                .f250-hyundai__adBWrapper .facia-container__inner {
+                    background-position: 390px 0;
+                }
+                .f250-hyundai__fade {
+/*                    background-image: url(images/trans_grad.png); */
+                    background-repeat: repeat-y;
+                    background-position: 0 0;
+                }
+                .f250-hyundai__cta {
+
+                }
+                .f250-hyundai__subject {
+                    width: 20%;
+                }
+            }
+            @media (min-width: 1140px){
+                .f250-hyundai__adBWrapper .facia-container__inner {
+                    background-position: 100% 0; 
+                }
+            }
+        </style>
+        <div class="ad-slot__label f250-hyundai__label facia-container--layout-front" data-test-id="ad-slot-label">
+            <div class="facia-container__inner">Advertisement</div>
+        </div>
+        <div class="f250-hyundai__adBWrapper l-side-margins f250--top">
+            <div class="f250-hyundaiLeft"></div>
+            <a href="%%CLICK_URL_ESC%%%%DEST_URL%%">
+                <div class="gs-container">
+                    <div class="f250-hyundai__adWrapper">
+                        <div class="facia-container--layout-front slide-holder">
+                            <div class="slide slide1"></div>
+                            <div class="slide slide2"></div>
+                            <div class="slide slide3"></div>
+                            <div class="facia-container__inner slide slide4">
+                                <div class="f250-hyundai__fade"></div>
+                                <div class="f250-hyundai__cta"></div>
+                                <div class="f250-hyundai__subject"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+</div>

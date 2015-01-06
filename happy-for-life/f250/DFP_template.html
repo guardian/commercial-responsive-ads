@@ -1,0 +1,136 @@
+<script type="text/template" class="breakout__html">
+    <style type="text/css">
+        /* These are over-riding site styles USE WITH CAUTION */
+        @media (min-width: 741px) {
+            .top-banner-ad-container--desktop,
+            .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+                display: block !important;
+                max-width: none !important;
+            }
+        }
+        .top-banner-ad-container--desktop .ad-slot--top-banner-ad {
+            width: 100% !important;
+            padding: 0 !important;
+            margin-left: 0 !important;
+        }
+        .top-banner-ad-container--mobile .ad-slot--top-banner-ad {
+            height: 118px;
+            padding: 0;
+        }
+        
+        .f250-hyundai__adWrapper {
+            height: 100px;
+        }
+        
+        .f250-hyundai__adBWrapper.f250--top {
+            background: #000;
+        }
+        
+        .f250-hyundai__adBWrapper.f250--bottom .gs-container {
+            padding: 0;
+        }
+        /* End of nasty hacks */
+        .ad-slot--top-above-nav .ad-slot__label {
+            display: none;
+        }
+        .top-banner-ad-container--facia-layout .ad-slot--top-banner-ad .ad-slot__label,
+        .ad-slot__label.f250-hyundai__label {
+            width: auto;
+            display: block;
+            height: 18px;
+            border-top: 0;
+            text-align: left;
+        }
+        .f250-hyundai__adBWrapper .container__body {
+            height: 100px;
+            position: relative;
+            padding-top: 0;
+        }
+        .f250-hyundai__adBWrapper .facia-container__inner {
+            background-image: url(%%FILE:JPG2%%);
+            background-repeat: no-repeat;
+            background-position: 75% 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }  
+        .f250-hyundai__subject {
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            background: url(%%FILE:PNG2%%) no-repeat 100% 170px;
+            width: 100%;
+            height: 100%;
+        }
+        .f250-hyundai__cta {
+            background-image: url(%%FILE:PNG3%%);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            margin-left: 0;
+        }
+        .f250-hyundai__fade {
+            height: 100%;
+            width: 100%;
+        }
+        
+        @media (max-width: 479px){
+            .f250-hyundai__adBWrapper .facia-container__inner {
+                margin: 0;
+            }
+        }
+    
+        @media (min-width: 480px){
+            .f250-hyundai__adBWrapper .facia-container__inner {
+                background-position: 100% 0;
+            }
+        }
+
+        @media (min-width: 740px){
+            .f250-hyundai__adWrapper,
+            .f250-hyundai__adBWrapper .container__body,
+            .f250-hyundai__people {
+                height: 250px;
+            }
+            .f250-hyundai__subject {
+                width: 25%;
+            }
+            .f250-hyundai__adBWrapper .facia-container__inner {
+                background-image: url(%%FILE:JPG1%%);
+                background-position: 50% 0;
+            }
+            .f250-hyundai__cta {
+                background-image: url(%%FILE:PNG1%%);
+                background-position: 10px 68px;
+                background-size: auto 45%;
+            }
+        }
+        @media (min-width: 980px){
+            .f250-hyundai__cta {
+                background-size: initial;
+            }
+        }
+        @media (min-width: 1140px){
+
+        }
+    </style>
+    <div class="ad-slot__label f250-hyundai__label facia-container--layout-front" data-test-id="ad-slot-label">
+        <div class="facia-container__inner">Advertisement</div>
+    </div>
+    <div class="f250-hyundai__adBWrapper l-side-margins f250--top">
+        <a href="%%CLICK_URL_ESC%%%%DEST_URL%%">
+            <div class="gs-container">
+                <div class="f250-hyundai__adWrapper">
+                    <div class="facia-container__inner">
+                        <div class="f250-hyundai__cta"></div>
+                        <div class="f250-hyundai__subject"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</script>
