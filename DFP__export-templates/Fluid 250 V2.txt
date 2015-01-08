@@ -65,8 +65,8 @@
     {
       "mimeTypes": [
         "JPG",
-        "PNG",
-        "GIF"
+        "GIF",
+        "PNG"
       ],
       "label": "Background Image",
       "uniqueName": "BackgroundImage",
@@ -151,8 +151,8 @@
     {
       "mimeTypes": [
         "JPG",
-        "PNG",
-        "GIF"
+        "GIF",
+        "PNG"
       ],
       "label": "Background Image mobile",
       "uniqueName": "BackgroundImagemobile",
@@ -234,8 +234,8 @@
     {
       "mimeTypes": [
         "JPG",
-        "PNG",
-        "GIF"
+        "GIF",
+        "PNG"
       ],
       "label": "Layer 1 background image",
       "uniqueName": "Layer1backgroundimage",
@@ -291,8 +291,8 @@
     {
       "mimeTypes": [
         "JPG",
-        "PNG",
-        "GIF"
+        "GIF",
+        "PNG"
       ],
       "label": "Layer 2 background image",
       "uniqueName": "Layer2backgroundimage",
@@ -348,8 +348,8 @@
     {
       "mimeTypes": [
         "JPG",
-        "PNG",
-        "GIF"
+        "GIF",
+        "PNG"
       ],
       "label": "Layer 3 background image",
       "uniqueName": "Layer3backgroundimage",
@@ -405,8 +405,8 @@
     {
       "mimeTypes": [
         "JPG",
-        "PNG",
-        "GIF"
+        "GIF",
+        "PNG"
       ],
       "label": "Layer 1 background image mobile",
       "uniqueName": "Layer1backgroundimagemobile",
@@ -462,8 +462,8 @@
     {
       "mimeTypes": [
         "JPG",
-        "PNG",
-        "GIF"
+        "GIF",
+        "PNG"
       ],
       "label": "Layer 2 background image mobile",
       "uniqueName": "Layer2backgroundimagemobile",
@@ -519,8 +519,8 @@
     {
       "mimeTypes": [
         "JPG",
-        "PNG",
-        "GIF"
+        "GIF",
+        "PNG"
       ],
       "label": "Layer 3 background image mobile",
       "uniqueName": "Layer3backgroundimagemobile",
@@ -572,9 +572,83 @@
       "uniqueName": "Layer3backgroundimagepositionmobile",
       "isRequired": false,
       "variableType": "LIST"
+    },
+    {
+      "isTrackingUrl": false,
+      "label": "Video URL",
+      "uniqueName": "VideoURL",
+      "description": "Url for video embed, currently works for YouTube and Vimeo.",
+      "isRequired": false,
+      "variableType": "URL"
+    },
+    {
+      "defaultValue": 0,
+      "label": "Video width",
+      "uniqueName": "Videowidth",
+      "isRequired": false,
+      "variableType": "LONG"
+    },
+    {
+      "defaultValue": 0,
+      "label": "Video height",
+      "uniqueName": "Videoheight",
+      "isRequired": false,
+      "variableType": "LONG"
+    },
+    {
+      "choices": [
+        {
+          "label": "top",
+          "value": "top"
+        },
+        {
+          "label": "center",
+          "value": "center"
+        },
+        {
+          "label": "bottom",
+          "value": "bottom"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "center",
+      "label": "Video position vertical",
+      "uniqueName": "Videopositionvertical",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "choices": [
+        {
+          "label": "left",
+          "value": "left"
+        },
+        {
+          "label": "center",
+          "value": "center"
+        },
+        {
+          "label": "right",
+          "value": "right"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "center",
+      "label": "Video position horizontal",
+      "uniqueName": "Videopositionhorizontal",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "defaultValue": 0,
+      "label": "Video horizontal space",
+      "uniqueName": "Videohorizontalspace",
+      "description": "If the video is left or right aligned this adds space (in pixels) to the left or right side.\n\nStandard Guardian spacing at the moment is 20px.\n\nShould be a number only",
+      "isRequired": false,
+      "variableType": "LONG"
     }
   ],
-  "formatter": "\u003cscript type\u003d\"application/json\" class\u003d\"breakout__script\"\u003e\n{\n    \"name\": \"fluid250\",\n    \"params\": {\n        \"link\": \"[%Link%]\",\n        \"clickMacro\": \"%%CLICK_URL_ESC%%\",\n        \"trackingPixel\": \"[%Trackingpixel%]\",\n        \"cacheBuster\": \"%%CACHEBUSTER%%\",\n        \"creativeHeight\": \"[%Creativeheight%]\",\n        \"showAdLabel\": \"[%ShowAdvertlabel%]\",\n        \"backgroundColor\": \"[%Backgroundcolour%]\",\n        \"backgroundImage\": \"[%BackgroundImage%]\",\n        \"backgroundRepeat\": \"[%Backgroundrepeat%]\",\n        \"backgroundPosition\": \"[%Backgroundposition%]\",\n        \"backgroundImageM\": \"[%BackgroundImagemobile%]\",\n        \"backgroundRepeatM\": \"[%Backgroundimagemobilerepeat%]\",\n        \"backgroundPositionM\": \"[%BackgroundImagemobileposition%]\",\n        \"layerOneBGImage\": \"[%Layer1backgroundimage%]\",\n        \"layerOneBGPosition\": \"[%Layer1backgroundimageposition%]\",\n        \"layerTwoBGImage\": \"[%Layer2backgroundimage%]\",\n        \"layerTwoBGPosition\": \"[%Layer2backgroundimageposition%]\",\n        \"layerThreeBGImage\": \"[%Layer3backgroundimage%]\",\n        \"layerThreeBGPosition\": \"[%Layer3backgroundimageposition%]\",\n        \"layerOneBGImageM\": \"[%Layer1backgroundimagemobile%]\",\n        \"layerOneBGPositionM\": \"[%Layer1backgroundimagepositionmobile%]\",\n        \"layerTwoBGImageM\": \"[%Layer2backgroundimagemobile%]\",\n        \"layerTwoBGPositionM\": \"[%Layer2backgroundimagepositionmobile%]\",\n        \"layerThreeBGImageM\": \"[%Layer3backgroundimagemobile%]\",\n        \"layerThreeBGPositionM\": \"[%Layer3backgroundimagepositionmobile%]\"\n    }\n}\n\u003c/script\u003e\n",
+  "formatter": "\u003cscript type\u003d\"application/json\" class\u003d\"breakout__script\"\u003e\n{\n    \"name\": \"fluid250\",\n    \"params\": {\n        \"link\": \"[%Link%]\",\n        \"clickMacro\": \"%%CLICK_URL_ESC%%\",\n        \"trackingPixel\": \"[%Trackingpixel%]\",\n        \"cacheBuster\": \"%%CACHEBUSTER%%\",\n        \"creativeHeight\": \"[%Creativeheight%]\",\n        \"showAdLabel\": \"[%ShowAdvertlabel%]\",\n        \"backgroundColor\": \"[%Backgroundcolour%]\",\n        \"backgroundImage\": \"[%BackgroundImage%]\",\n        \"backgroundRepeat\": \"[%Backgroundrepeat%]\",\n        \"backgroundPosition\": \"[%Backgroundposition%]\",\n        \"backgroundImageM\": \"[%BackgroundImagemobile%]\",\n        \"backgroundRepeatM\": \"[%Backgroundimagemobilerepeat%]\",\n        \"backgroundPositionM\": \"[%BackgroundImagemobileposition%]\",\n        \"layerOneBGImage\": \"[%Layer1backgroundimage%]\",\n        \"layerOneBGPosition\": \"[%Layer1backgroundimageposition%]\",\n        \"layerTwoBGImage\": \"[%Layer2backgroundimage%]\",\n        \"layerTwoBGPosition\": \"[%Layer2backgroundimageposition%]\",\n        \"layerThreeBGImage\": \"[%Layer3backgroundimage%]\",\n        \"layerThreeBGPosition\": \"[%Layer3backgroundimageposition%]\",\n        \"layerOneBGImageM\": \"[%Layer1backgroundimagemobile%]\",\n        \"layerOneBGPositionM\": \"[%Layer1backgroundimagepositionmobile%]\",\n        \"layerTwoBGImageM\": \"[%Layer2backgroundimagemobile%]\",\n        \"layerTwoBGPositionM\": \"[%Layer2backgroundimagepositionmobile%]\",\n        \"layerThreeBGImageM\": \"[%Layer3backgroundimagemobile%]\",\n        \"layerThreeBGPositionM\": \"[%Layer3backgroundimagepositionmobile%]\",\n        \"videoURL\": \"[%VideoURL%]\",\n        \"videoWidth\": \"[%Videowidth%]\",\n        \"videoHeight\": \"[%Videoheight%]\",\n        \"videoPositionH\": \"[%Videopositionhorizontal%]\",\n        \"videoPositionV\": \"[%Videopositionvertical%]\",\n        \"videoHorizSpace\": \"[%Videohorizontalspace%]\"\n    }\n}\n\u003c/script\u003e\n",
   "type": "USER_DEFINED",
   "targetPlatforms": [
     "ANY"
