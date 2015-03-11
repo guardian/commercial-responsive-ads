@@ -4,9 +4,9 @@
   "variables": [
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
-        "GIF"
+        "GIF",
+        "JPG"
       ],
       "label": "Image",
       "uniqueName": "Image",
@@ -15,14 +15,23 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
-        "GIF"
+        "GIF",
+        "JPG"
       ],
       "label": "Static Image",
       "uniqueName": "StaticImage",
       "description": "Static fallback for mobile devices",
       "isRequired": true,
+      "variableType": "ASSET"
+    },
+    {
+      "mimeTypes": [
+        "PNG"
+      ],
+      "label": "Still Image",
+      "uniqueName": "StillImage",
+      "isRequired": false,
       "variableType": "ASSET"
     },
     {
@@ -41,7 +50,7 @@
       "variableType": "URL"
     }
   ],
-  "formatter": "\u003cscript type\u003d\"application/json\" class\u003d\"breakout__script\"\u003e\n    {\n        \"name\": \"scrollable-mpu\",\n        \"params\": {\n            \"image\": \"[%Image%]\",\n            \"staticImage\": \"[%StaticImage%]\",\n            \"destination\": \"[%Destination%]\",\n            \"trackingPixel\": \"[%TrackingPixel%]\",\n            \"clickMacro\": \"%%CLICK_URL_ESC%%\"\n        }\n    }\n\u003c/script\u003e\n",
+  "formatter": "\u003cscript type\u003d\"application/json\" class\u003d\"breakout__script\"\u003e\n    {\n        \"name\": \"scrollable-mpu\",\n        \"params\": {\n            \"image\": \"[%Image%]\",\n            \"staticImage\": \"[%StaticImage%]\",\n            \"stillImage\": \"[%StillImage%]\",\n            \"destination\": \"[%Destination%]\",\n            \"trackingPixel\": \"[%TrackingPixel%]\",\n            \"clickMacro\": \"%%CLICK_URL_ESC%%\"\n        }\n    }\n\u003c/script\u003e\n",
   "type": "USER_DEFINED",
   "targetPlatforms": [
     "ANY"
