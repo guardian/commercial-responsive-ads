@@ -110,6 +110,39 @@
         "PNG",
         "GIF"
       ],
+      "label": "Background parallax image",
+      "uniqueName": "Backgroundparallaximage",
+      "isRequired": false,
+      "variableType": "ASSET"
+    },
+    {
+      "choices": [
+        {
+          "label": "left",
+          "value": "left"
+        },
+        {
+          "label": "center",
+          "value": "center"
+        },
+        {
+          "label": "right",
+          "value": "right"
+        }
+      ],
+      "allowOtherChoice": false,
+      "defaultValue": "center",
+      "label": "Background parallax image position",
+      "uniqueName": "Backgroundparallaximageposition",
+      "isRequired": false,
+      "variableType": "LIST"
+    },
+    {
+      "mimeTypes": [
+        "JPG",
+        "PNG",
+        "GIF"
+      ],
       "label": "Background image mobile",
       "uniqueName": "BackgroundimageM",
       "isRequired": false,
@@ -1529,6 +1562,7 @@
     },
     {
       "isTrackingUrl": false,
+      "urlType": "STANDARD_HTTP",
       "label": "Video URL",
       "uniqueName": "VideoURL",
       "isRequired": false,
@@ -1588,11 +1622,8 @@
       "variableType": "LIST"
     }
   ],
-  "formatter": "\u003cscript type\u003d\"application/json\" class\u003d\"breakout__script\"\u003e\n    {\n        \"name\": \"expandable-v2\",\n        \"params\": {\n            \"backgroundColor\": \"[%Backgroundcolor%]\",\n            \"backgroundImage\": \"[%Backgroundimage%]\",\n            \"backgroundRepeat\": \"[%Backgroundrepeat%]\",\n            \"backgroundPosition\": \"[%Backgroundposition%]\",\n            \"backgroundImageM\": \"[%BackgroundimageM%]\",\n            \"backgroundRepeatM\": \"[%BackgroundrepeatM%]\",\n            \"backgroundPositionM\": \"[%BackgroundpositionM%]\",\n            \"slide1BGColor\": \"[%Slide1BGcolour%]\",\n            \"slide1BGImage\": \"[%Slide1BGimage%]\",\n            \"slide1BGImageRepeat\": \"[%Slide1BGimagerepeat%]\",\n            \"slide1BGImagePosition\": \"[%Slide1BGimageposition%]\",\n            \"slide1BGImageM\": \"[%Slide1BGimageM%]\",\n            \"slide1BGImageRepeatM\": \"[%Slide1BGimagerepeatM%]\",\n            \"slide1BGImagePositionM\": \"[%Slide1BGimagepositionM%]\",\n            \"slide1Layer1BGImage\": \"[%Slide1layer1BGimage%]\",\n            \"slide1Layer1BGImageRepeat\": \"[%Slide1layer1BGimagerepeat%]\",\n            \"slide1Layer1BGImagePosition\": \"[%Slide1layer1BGimageposition%]\",\n            \"slide1Layer1BGImageM\": \"[%Slide1layer1BGimageM%]\",\n            \"slide1Layer1BGImageRepeatM\": \"[%Slide1layer1BGimagerepeatM%]\",\n            \"slide1Layer1BGImagePositionM\": \"[%Slide1layer1BGimagepositionM%]\",\n            \"slide1Layer2BGImage\": \"[%Slide1layer2BGimage%]\",\n            \"slide1Layer2BGImageRepeat\": \"[%Slide1layer2BGimagerepeat%]\",\n            \"slide1Layer2BGImagePosition\": \"[%Slide1layer2BGimageposition%]\",\n            \"slide1Layer2BGImageM\": \"[%Slide1layer2BGimageM%]\",\n            \"slide1Layer2BGImageRepeatM\": \"[%Slide1layer2BGimagerepeatM%]\",\n            \"slide1Layer2BGImagePositionM\": \"[%Slide1layer2BGimagepositionM%]\",\n            \"slide1Layer3BGImage\": \"[%Slide1layer3BGimage%]\",\n            \"slide1Layer3BGImageRepeat\": \"[%Slide1layer3BGimagerepeat%]\",\n            \"slide1Layer3BGImagePosition\": \"[%Slide1layer3BGimageposition%]\",\n            \"slide1Layer3BGImageM\": \"[%Slide1layer3BGimageM%]\",\n            \"slide1Layer3BGImageRepeatM\": \"[%Slide1layer3BGimagerepeatM%]\",\n            \"slide1Layer3BGImagePositionM\": \"[%Slide1layer3BGimagepositionM%]\",\n            \"slide2BGColor\": \"[%Slide2BGcolour%]\",\n            \"slide2BGImage\": \"[%Slide2BGimage%]\",\n            \"slide2BGImageRepeat\": \"[%Slide2BGimagerepeat%]\",\n            \"slide2BGImagePosition\": \"[%Slide2BGimageposition%]\",\n            \"slide2BGImageM\": \"[%Slide2BGimageM%]\",\n            \"slide2BGImageRepeatM\": \"[%Slide2BGimagerepeatM%]\",\n            \"slide2BGImagePositionM\": \"[%Slide2BGimagepositionM%]\",\n            \"slide2Layer1BGImage\": \"[%Slide2layer1BGimage%]\",\n            \"slide2Layer1BGImageRepeat\": \"[%Slide2layer1BGimagerepeat%]\",\n            \"slide2Layer1BGImagePosition\": \"[%Slide2layer1BGimageposition%]\",\n            \"slide2Layer1BGImageM\": \"[%Slide2layer1BGimageM%]\",\n            \"slide2Layer1BGImageRepeatM\": \"[%Slide2layer1BGimagerepeatM%]\",\n            \"slide2Layer1BGImagePositionM\": \"[%Slide2layer1BGimagepositionM%]\",\n            \"slide2Layer2BGImage\": \"[%Slide2layer2BGimage%]\",\n            \"slide2Layer2BGImageRepeat\": \"[%Slide2layer2BGimagerepeat%]\",\n            \"slide2Layer2BGImagePosition\": \"[%Slide2layer2BGimageposition%]\",\n            \"slide2Layer2BGImageM\": \"[%Slide2layer2BGimageM%]\",\n            \"slide2Layer2BGImageRepeatM\": \"[%Slide2layer2BGimagerepeatM%]\",\n            \"slide2Layer2BGImagePositionM\": \"[%Slide2layer2BGimagepositionM%]\",\n            \"slide2Layer3BGImage\": \"[%Slide2layer3BGimage%]\",\n            \"slide2Layer3BGImageRepeat\": \"[%Slide2layer3BGimagerepeat%]\",\n            \"slide2Layer3BGImagePosition\": \"[%Slide2layer3BGimageposition%]\",\n            \"slide2Layer3BGImageM\": \"[%Slide2layer3BGimageM%]\",\n            \"slide2Layer3BGImageRepeatM\": \"[%Slide2layer3BGimagerepeatM%]\",\n            \"slide2Layer3BGImagePositionM\": \"[%Slide2layer3BGimagepositionM%]\",\n            \"videoURL\": \"[%VideoURL%]\",\n            \"videoPositionH\": \"[%Videopositionhorizontal%]\",\n            \"videoHorizSpace\": \"[%Videohorizontalspace%]\",\n            \"showMoreType\": \"[%Showmoretype%]\",\n            \"clickMacro\": \"%%CLICK_URL_ESC%%\",\n            \"trackingPixel\": \"[%Trackingpixel%]\",\n            \"cacheBuster\": \"%%CACHEBUSTER%%\",\n            \"link\": \"[%Link%]\",\n            \"ecid\": \"%ecid!\"\n        }\n    }\n\u003c/script\u003e\n",
+  "formatter": "\u003cscript type\u003d\"application/json\" class\u003d\"breakout__script\"\u003e\n    {\n        \"name\": \"expandable-v2\",\n        \"params\": {\n            \"backgroundColor\": \"[%Backgroundcolor%]\",\n            \"backgroundImage\": \"[%Backgroundimage%]\",\n            \"backgroundRepeat\": \"[%Backgroundrepeat%]\",\n            \"backgroundPosition\": \"[%Backgroundposition%]\",\n            \"backgroundImageP\": \"[%Backgroundparallaximage%]\",\n            \"backgroundImagePPosition\": \"[%Backgroundparallaximageposition%]\",\n            \"backgroundImageM\": \"[%BackgroundimageM%]\",\n            \"backgroundRepeatM\": \"[%BackgroundrepeatM%]\",\n            \"backgroundPositionM\": \"[%BackgroundpositionM%]\",\n            \"slide1BGColor\": \"[%Slide1BGcolour%]\",\n            \"slide1BGImage\": \"[%Slide1BGimage%]\",\n            \"slide1BGImageRepeat\": \"[%Slide1BGimagerepeat%]\",\n            \"slide1BGImagePosition\": \"[%Slide1BGimageposition%]\",\n            \"slide1BGImageM\": \"[%Slide1BGimageM%]\",\n            \"slide1BGImageRepeatM\": \"[%Slide1BGimagerepeatM%]\",\n            \"slide1BGImagePositionM\": \"[%Slide1BGimagepositionM%]\",\n            \"slide1Layer1BGImage\": \"[%Slide1layer1BGimage%]\",\n            \"slide1Layer1BGImageRepeat\": \"[%Slide1layer1BGimagerepeat%]\",\n            \"slide1Layer1BGImagePosition\": \"[%Slide1layer1BGimageposition%]\",\n            \"slide1Layer1BGImageM\": \"[%Slide1layer1BGimageM%]\",\n            \"slide1Layer1BGImageRepeatM\": \"[%Slide1layer1BGimagerepeatM%]\",\n            \"slide1Layer1BGImagePositionM\": \"[%Slide1layer1BGimagepositionM%]\",\n            \"slide1Layer2BGImage\": \"[%Slide1layer2BGimage%]\",\n            \"slide1Layer2BGImageRepeat\": \"[%Slide1layer2BGimagerepeat%]\",\n            \"slide1Layer2BGImagePosition\": \"[%Slide1layer2BGimageposition%]\",\n            \"slide1Layer2BGImageM\": \"[%Slide1layer2BGimageM%]\",\n            \"slide1Layer2BGImageRepeatM\": \"[%Slide1layer2BGimagerepeatM%]\",\n            \"slide1Layer2BGImagePositionM\": \"[%Slide1layer2BGimagepositionM%]\",\n            \"slide1Layer3BGImage\": \"[%Slide1layer3BGimage%]\",\n            \"slide1Layer3BGImageRepeat\": \"[%Slide1layer3BGimagerepeat%]\",\n            \"slide1Layer3BGImagePosition\": \"[%Slide1layer3BGimageposition%]\",\n            \"slide1Layer3BGImageM\": \"[%Slide1layer3BGimageM%]\",\n            \"slide1Layer3BGImageRepeatM\": \"[%Slide1layer3BGimagerepeatM%]\",\n            \"slide1Layer3BGImagePositionM\": \"[%Slide1layer3BGimagepositionM%]\",\n            \"slide2BGColor\": \"[%Slide2BGcolour%]\",\n            \"slide2BGImage\": \"[%Slide2BGimage%]\",\n            \"slide2BGImageRepeat\": \"[%Slide2BGimagerepeat%]\",\n            \"slide2BGImagePosition\": \"[%Slide2BGimageposition%]\",\n            \"slide2BGImageM\": \"[%Slide2BGimageM%]\",\n            \"slide2BGImageRepeatM\": \"[%Slide2BGimagerepeatM%]\",\n            \"slide2BGImagePositionM\": \"[%Slide2BGimagepositionM%]\",\n            \"slide2Layer1BGImage\": \"[%Slide2layer1BGimage%]\",\n            \"slide2Layer1BGImageRepeat\": \"[%Slide2layer1BGimagerepeat%]\",\n            \"slide2Layer1BGImagePosition\": \"[%Slide2layer1BGimageposition%]\",\n            \"slide2Layer1BGImageM\": \"[%Slide2layer1BGimageM%]\",\n            \"slide2Layer1BGImageRepeatM\": \"[%Slide2layer1BGimagerepeatM%]\",\n            \"slide2Layer1BGImagePositionM\": \"[%Slide2layer1BGimagepositionM%]\",\n            \"slide2Layer2BGImage\": \"[%Slide2layer2BGimage%]\",\n            \"slide2Layer2BGImageRepeat\": \"[%Slide2layer2BGimagerepeat%]\",\n            \"slide2Layer2BGImagePosition\": \"[%Slide2layer2BGimageposition%]\",\n            \"slide2Layer2BGImageM\": \"[%Slide2layer2BGimageM%]\",\n            \"slide2Layer2BGImageRepeatM\": \"[%Slide2layer2BGimagerepeatM%]\",\n            \"slide2Layer2BGImagePositionM\": \"[%Slide2layer2BGimagepositionM%]\",\n            \"slide2Layer3BGImage\": \"[%Slide2layer3BGimage%]\",\n            \"slide2Layer3BGImageRepeat\": \"[%Slide2layer3BGimagerepeat%]\",\n            \"slide2Layer3BGImagePosition\": \"[%Slide2layer3BGimageposition%]\",\n            \"slide2Layer3BGImageM\": \"[%Slide2layer3BGimageM%]\",\n            \"slide2Layer3BGImageRepeatM\": \"[%Slide2layer3BGimagerepeatM%]\",\n            \"slide2Layer3BGImagePositionM\": \"[%Slide2layer3BGimagepositionM%]\",\n            \"videoURL\": \"[%VideoURL%]\",\n            \"videoPositionH\": \"[%Videopositionhorizontal%]\",\n            \"videoHorizSpace\": \"[%Videohorizontalspace%]\",\n            \"showMoreType\": \"[%Showmoretype%]\",\n            \"clickMacro\": \"%%CLICK_URL_ESC%%\",\n            \"trackingPixel\": \"[%Trackingpixel%]\",\n            \"cacheBuster\": \"%%CACHEBUSTER%%\",\n            \"link\": \"[%Link%]\",\n            \"ecid\": \"%ecid!\"\n        }\n    }\n\u003c/script\u003e\n",
   "type": "USER_DEFINED",
-  "targetPlatforms": [
-    "ANY"
-  ],
   "isInterstitial": false,
   "isNativeEligible": false,
   "isSafeFrameCompatible": false
