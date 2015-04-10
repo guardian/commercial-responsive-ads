@@ -4,9 +4,9 @@
   "variables": [
     {
       "mimeTypes": [
+        "JPG",
         "PNG",
-        "GIF",
-        "JPG"
+        "GIF"
       ],
       "label": "Image",
       "uniqueName": "Image",
@@ -15,27 +15,30 @@
     },
     {
       "mimeTypes": [
+        "JPG",
         "PNG",
-        "GIF",
-        "JPG"
+        "GIF"
       ],
       "label": "Static Image",
       "uniqueName": "StaticImage",
-      "description": "Static fallback for mobile devices",
+      "description": "Static fallback for mobile devices, ie the 300 x 250px version.",
       "isRequired": true,
       "variableType": "ASSET"
     },
     {
       "mimeTypes": [
-        "PNG"
+        "PNG",
+        "GIF"
       ],
       "label": "Still Image",
       "uniqueName": "StillImage",
+      "description": "The \"layer\" that sits over the top of the scrolling background, should be 300 x 250px and transparent png.",
       "isRequired": false,
       "variableType": "ASSET"
     },
     {
       "isTrackingUrl": false,
+      "urlType": "STANDARD_HTTP",
       "label": "Destination",
       "uniqueName": "Destination",
       "isRequired": true,
@@ -43,6 +46,7 @@
     },
     {
       "isTrackingUrl": false,
+      "urlType": "STANDARD_HTTP",
       "label": "Tracking Pixel",
       "uniqueName": "TrackingPixel",
       "description": "URL of the tracking pixel",
@@ -52,9 +56,6 @@
   ],
   "formatter": "\u003cscript type\u003d\"application/json\" class\u003d\"breakout__script\"\u003e\n    {\n        \"name\": \"scrollable-mpu\",\n        \"params\": {\n            \"image\": \"[%Image%]\",\n            \"staticImage\": \"[%StaticImage%]\",\n            \"stillImage\": \"[%StillImage%]\",\n            \"destination\": \"[%Destination%]\",\n            \"trackingPixel\": \"[%TrackingPixel%]\",\n            \"clickMacro\": \"%%CLICK_URL_ESC%%\"\n        }\n    }\n\u003c/script\u003e\n",
   "type": "USER_DEFINED",
-  "targetPlatforms": [
-    "ANY"
-  ],
   "isInterstitial": false,
   "isNativeEligible": false,
   "isSafeFrameCompatible": false
