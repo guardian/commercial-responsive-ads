@@ -112,6 +112,7 @@
       ],
       "label": "Background parallax image",
       "uniqueName": "Backgroundparallaximage",
+      "description": "The scrolling background image, if using this feature remove the normal background image. If using the split or parallax options the image should be 750px high. If using the fixed option it should tile vertically.",
       "isRequired": false,
       "variableType": "ASSET"
     },

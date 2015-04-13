@@ -10,6 +10,7 @@
       ],
       "label": "Image",
       "uniqueName": "Image",
+      "description": "The background image that \"scrolls\" behind. Usually 750px in height but should tile vertically.",
       "isRequired": true,
       "variableType": "ASSET"
     },

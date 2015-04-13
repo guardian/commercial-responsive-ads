@@ -64,9 +64,9 @@
     },
     {
       "mimeTypes": [
-        "GIF",
+        "JPG",
         "PNG",
-        "JPG"
+        "GIF"
       ],
       "label": "Background Image",
       "uniqueName": "BackgroundImage",
@@ -189,9 +189,9 @@
     },
     {
       "mimeTypes": [
-        "GIF",
+        "JPG",
         "PNG",
-        "JPG"
+        "GIF"
       ],
       "label": "Background Image mobile",
       "uniqueName": "BackgroundImagemobile",
@@ -272,9 +272,9 @@
     },
     {
       "mimeTypes": [
-        "GIF",
+        "JPG",
         "PNG",
-        "JPG"
+        "GIF"
       ],
       "label": "Layer 1 background image",
       "uniqueName": "Layer1backgroundimage",
@@ -368,9 +368,9 @@
     },
     {
       "mimeTypes": [
-        "GIF",
+        "JPG",
         "PNG",
-        "JPG"
+        "GIF"
       ],
       "label": "Layer 2 background image",
       "uniqueName": "Layer2backgroundimage",
@@ -464,9 +464,9 @@
     },
     {
       "mimeTypes": [
-        "GIF",
+        "JPG",
         "PNG",
-        "JPG"
+        "GIF"
       ],
       "label": "Layer 3 background image",
       "uniqueName": "Layer3backgroundimage",
@@ -560,9 +560,9 @@
     },
     {
       "mimeTypes": [
-        "GIF",
+        "JPG",
         "PNG",
-        "JPG"
+        "GIF"
       ],
       "label": "Layer 1 background image mobile",
       "uniqueName": "Layer1backgroundimagemobile",
@@ -617,9 +617,9 @@
     },
     {
       "mimeTypes": [
-        "GIF",
+        "JPG",
         "PNG",
-        "JPG"
+        "GIF"
       ],
       "label": "Layer 2 background image mobile",
       "uniqueName": "Layer2backgroundimagemobile",
@@ -674,9 +674,9 @@
     },
     {
       "mimeTypes": [
-        "GIF",
+        "JPG",
         "PNG",
-        "JPG"
+        "GIF"
       ],
       "label": "Layer 3 background image mobile",
       "uniqueName": "Layer3backgroundimagemobile",
@@ -731,6 +731,7 @@
     },
     {
       "isTrackingUrl": false,
+      "urlType": "STANDARD_HTTP",
       "label": "Video URL",
       "uniqueName": "VideoURL",
       "description": "Url for video embed, currently works for YouTube and Vimeo.",
@@ -792,9 +793,6 @@
   ],
   "formatter": "\u003cscript type\u003d\"application/json\" class\u003d\"breakout__script\"\u003e\n{\n    \"name\": \"fluid250\",\n    \"params\": {\n        \"link\": \"[%Link%]\",\n        \"clickMacro\": \"%%CLICK_URL_ESC%%\",\n        \"trackingPixel\": \"[%Trackingpixel%]\",\n        \"cacheBuster\": \"%%CACHEBUSTER%%\",\n        \"creativeHeight\": \"[%Creativeheight%]\",\n        \"showAdLabel\": \"[%ShowAdvertlabel%]\",\n        \"backgroundColor\": \"[%Backgroundcolour%]\",\n        \"backgroundImage\": \"[%BackgroundImage%]\",\n        \"backgroundRepeat\": \"[%Backgroundrepeat%]\",\n        \"backgroundPosition\": \"[%Backgroundposition%]\",\n        \"backgroundImageScroll\": \"[%Backgroundimagescroll%]\",\n        \"backgroundImageM\": \"[%BackgroundImagemobile%]\",\n        \"backgroundRepeatM\": \"[%Backgroundimagemobilerepeat%]\",\n        \"backgroundPositionM\": \"[%BackgroundImagemobileposition%]\",\n        \"layerOneBGImage\": \"[%Layer1backgroundimage%]\",\n        \"layerOneBGPosition\": \"[%Layer1backgroundimageposition%]\",\n        \"layerOneImageScroll\": \"[%Layer1imagescroll%]\",\n        \"layerTwoBGImage\": \"[%Layer2backgroundimage%]\",\n        \"layerTwoBGPosition\": \"[%Layer2backgroundimageposition%]\",\n        \"layerTwoImageScroll\": \"[%Layer2imagescroll%]\",\n        \"layerThreeBGImage\": \"[%Layer3backgroundimage%]\",\n        \"layerThreeBGPosition\": \"[%Layer3backgroundimageposition%]\",\n        \"layerThreeImageScroll\": \"[%Layer3imagescroll%]\",\n        \"layerOneBGImageM\": \"[%Layer1backgroundimagemobile%]\",\n        \"layerOneBGPositionM\": \"[%Layer1backgroundimagepositionmobile%]\",\n        \"layerTwoBGImageM\": \"[%Layer2backgroundimagemobile%]\",\n        \"layerTwoBGPositionM\": \"[%Layer2backgroundimagepositionmobile%]\",\n        \"layerThreeBGImageM\": \"[%Layer3backgroundimagemobile%]\",\n        \"layerThreeBGPositionM\": \"[%Layer3backgroundimagepositionmobile%]\",\n        \"videoURL\": \"[%VideoURL%]\",\n        \"videoPositionH\": \"[%Videopositionhorizontal%]\",\n        \"videoPositionV\": \"[%Videopositionvertical%]\",\n        \"videoHorizSpace\": \"[%Videohorizontalspace%]\"\n    }\n}\n\u003c/script\u003e\n",
   "type": "USER_DEFINED",
-  "targetPlatforms": [
-    "ANY"
-  ],
   "isInterstitial": false,
   "isNativeEligible": false,
   "isSafeFrameCompatible": false
