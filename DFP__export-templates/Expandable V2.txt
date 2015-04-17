@@ -23,8 +23,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Background image",
@@ -106,8 +106,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Background parallax image",
@@ -167,8 +167,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Background image mobile",
@@ -256,8 +256,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 1 BG image",
@@ -339,8 +339,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 1 BG image mobile",
@@ -422,8 +422,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 1 layer 1 BG image",
@@ -505,8 +505,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 1 layer 1 BG image mobile",
@@ -588,8 +588,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 1 layer 2 BG image",
@@ -671,8 +671,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 1 layer 2 BG image mobile",
@@ -754,8 +754,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 1 layer 3 BG image",
@@ -837,8 +837,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 1 layer 3 BG image mobile",
@@ -926,8 +926,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 2 BG image",
@@ -1009,8 +1009,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 2 BG image mobile",
@@ -1092,8 +1092,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 2 layer 1 BG image",
@@ -1175,8 +1175,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 2 layer 1 BG image mobile",
@@ -1258,8 +1258,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 2 layer 2 BG image",
@@ -1341,8 +1341,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 2 layer 2 BG image mobile",
@@ -1424,8 +1424,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 2 layer 3 BG image",
@@ -1507,8 +1507,8 @@
     },
     {
       "mimeTypes": [
-        "JPG",
         "PNG",
+        "JPG",
         "GIF"
       ],
       "label": "Slide 2 layer 3 BG image mobile",
